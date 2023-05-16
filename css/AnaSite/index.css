@@ -1,0 +1,153 @@
+body{
+    background-color: #606060;
+}
+.nav-table{
+    width: 95%;
+    height: 150px;
+}
+.nav-table-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-table td{
+    text-align: center;
+    font-size: large;
+    font-weight:bolder;
+}
+
+.hakkimizda:link,.hakkimizda:visited{
+    display: inline-block;
+    padding: 14px 25px;
+    background-color: #ffffff;
+    text-decoration: none;
+    border-radius: 10%;
+    color: black;
+}
+.hakkimizda:hover,.hakkimizda:active{
+    display: inline-block;
+    padding: 14px 25px;
+    background-color: #393838;
+    text-decoration: none;
+    color: whitesmoke;
+}
+.robotlar:link,.robotlar:visited{
+    display: inline-block;
+    padding: 14px 25px;
+    background-color: #ffffff;
+    text-decoration: none;
+    border-radius: 10%;
+    color: black;
+}
+.robotlar:hover,.robotlar:active{
+    display: inline-block;
+    padding: 14px 25px;
+    background-color: #393838;
+    text-decoration: none;
+    color: whitesmoke;
+}
+.sponsorlar:link,.sponsorlar:visited{
+    display: inline-block;
+    padding: 14px 25px;
+    background-color: #ffffff;
+    text-decoration: none;
+    border-radius: 10%;
+    color: black;
+}
+.sponsorlar:hover,.sponsorlar:active{
+    display: inline-block;
+    padding: 14px 25px;
+    background-color: #393838;
+    text-decoration: none;
+    color: whitesmoke;
+}
+.blog:link,.blog:visited{
+    display: inline-block;
+    padding: 14px 25px;
+    background-color: #ffffff;
+    text-decoration: none;
+    border-radius: 10%;
+    color: black;
+}
+.blog:hover,.blog:active{
+    display: inline-block;
+    padding: 14px 25px;
+    background-color: #393838;
+    text-decoration: none;
+    color: whitesmoke;
+}
+.iletisim:link,.iletisim:visited{
+    display: inline-block;
+    padding: 14px 25px;
+    background-color: #ffffff;
+    text-decoration: none;
+    border-radius: 10%;
+    color: black;
+}
+.iletisim:hover,.iletisim:active{
+    display: inline-block;
+    padding: 14px 25px;
+    background-color: #393838;
+    text-decoration: none;
+    color: whitesmoke;
+}
+.egitim:link,.egitim:visited{
+    display: inline-block;
+    padding: 14px 25px;
+    background-color: #ffffff;
+    text-decoration: none;
+    border-radius: 10%;
+    color: black;
+}
+.egitim:hover,.egitim:active{
+    display: inline-block;
+    padding: 14px 25px;
+    background-color: #393838;
+    text-decoration: none;
+    color: whitesmoke;
+}
+.hakkimizda-div{
+    width: 100%;
+    height: 1200px;
+    display: grid;
+    gap: 50px 50px;
+}
+.biz-kimiz-amk{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    text-align: center;
+    font-size: 100px;
+    color:azure;
+}
+.iletisim-div{
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+}
+.biz-kimiz-p{
+    width: 400px;
+    height: 300px;
+    color: azure;
+    background-color: black;
+    text-align: center;
+}
+.biz-kimiz-more:link,.biz-kimiz-more:visited{
+    display: inline-block;
+    padding: 14px 25px;
+    background-color: #ffffff;
+    text-decoration: none;
+    border-radius: 10%;
+    color: black;
+    font-weight: bolder;
+}
+.biz-kimiz-more:hover,.biz-kimiz-more:active{
+    display: inline-block;
+    padding: 14px 25px;
+    background-color: #393838;
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: bolder;
+}
