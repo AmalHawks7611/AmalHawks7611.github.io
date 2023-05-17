@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #212529;
+    font-family: monospace;
+}
+nav{
+    background-color: #343A40;
+}
+.nav-table{
+    width: 100%;
+    height: 100px;
+}
+
+.nav-table-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-table td{
+    text-align: center;
+    font-size: large;
+    font-weight:bolder;
+}
+.image{
+    position: relative;
+    float: inline-start;
+}
+.hakkimizda:link,.hakkimizda:visited{
+    display: inline-block;
+    padding: 14px 25px;
+    text-decoration: none;
+    border-radius: 10%;
+    color: #fff;
+}
+.hakkimizda:hover,.hakkimizda:active{
+    display: inline-block;
+    padding: 14px 25px;
+    text-decoration: none;
+    color: whitesmoke;
+    text-decoration: underline whitesmoke;
+}
+.robotlar:link,.robotlar:visited{
+    display: inline-block;
+    padding: 14px 25px;
+    text-decoration: none;
+    border-radius: 10%;
+    color: #fff;
+}
+.robotlar:hover,.robotlar:active{
+    display: inline-block;
+    padding: 14px 25px;
+    text-decoration: none;
+    color: whitesmoke;
+    text-decoration: underline whitesmoke;
+}
+.sponsorlar:link,.sponsorlar:visited{
+    display: inline-block;
+    padding: 14px 25px;
+    text-decoration: none;
+    border-radius: 10%;
+    color: #fff;
+}
+.sponsorlar:hover,.sponsorlar:active{
+    display: inline-block;
+    padding: 14px 25px;
+    text-decoration: none;
+    color: whitesmoke;
+    text-decoration: underline whitesmoke;
+}
+.blog:link,.blog:visited{
+    display: inline-block;
+    padding: 14px 25px;
+    text-decoration: none;
+    border-radius: 10%;
+    color: #fff;
+}
+.blog:hover,.blog:active{
+    display: inline-block;
+    padding: 14px 25px;
+    text-decoration: none;
+    color: whitesmoke;
+    text-decoration: underline whitesmoke;
+}
+.iletisim:link,.iletisim:visited{
+    display: inline-block;
+    padding: 14px 25px;
+    text-decoration: none;
+    border-radius: 10%;
+    color: #fff;
+}
+.iletisim:hover,.iletisim:active{
+    display: inline-block;
+    padding: 14px 25px;
+    text-decoration: none;
+    color: whitesmoke;
+    text-decoration: underline whitesmoke;
+}
+.egitim:link,.egitim:visited{
+    display: inline-block;
+    padding: 14px 25px;
+    text-decoration: none;
+    border-radius: 10%;
+    color: #fff;
+}
+.egitim:hover,.egitim:active{
+    display: inline-block;
+    padding: 14px 25px;
+    text-decoration: none;
+    color: whitesmoke;
+    text-decoration: underline whitesmoke;
+}
+.hakkimizda-div{
+    width:100%;
+    height: 1100px;
+    display: flex;
+}
+.biz-kimiz-amk{  
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 100px;
+    color: #E9ECEF;
+}
+.iletisim-div{
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+}
+.biz-kimiz-p{
+    width: 400px;
+    height: 300px;
+    color: #fff;
+    background-color: #343A40;
+    border-radius: 20px;
+    padding: 15px;
+    text-align: center;
+    font-size: larger;
+}
+.biz-kimiz-more:link,.biz-kimiz-more:visited{
+    display: inline-block;
+    padding: 14px 25px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bolder;
+    border: 5px solid #495057;
+    margin-top: 20px;
+}
+.biz-kimiz-more:hover,.biz-kimiz-more:active{
+    display: inline-block;
+    padding: 14px 25px;
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: bolder;
+    border: 5px solid #495057;
+    margin-top: 20px;
+}
