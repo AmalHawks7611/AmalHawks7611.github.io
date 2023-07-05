@@ -129,7 +129,18 @@ nav{
     text-decoration: underline whitesmoke;
 
 }
-
+footer{
+    width: 100%;
+    background-color: #343A40;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-img{
+    width: 320px;
+    height: 200px;
+}
 @media  (min-width: 1024px) {
     .year{
         margin:1vw;
@@ -159,19 +170,6 @@ nav{
         display: block;
         width:18.6vw;
         height: 11.25vw;
-    }
-    
-    footer{
-        width: 100%;
-        background-color: #343A40;
-        height: fit-content;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .footer-img{
-        width: 320px;
-        height: 200px;
     }
 }
 
@@ -220,19 +218,6 @@ nav{
         display: block;
         width:31.33vw;
         height: 20.5vw;
-    }
-    
-    footer{
-        width: 100%;
-        background-color: #343A40;
-        height: fit-content;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .footer-img{
-        width: 320px;
-        height: 200px;
     }
 }
 
