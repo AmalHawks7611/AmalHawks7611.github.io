@@ -468,6 +468,15 @@ footer{
         justify-content: center;
         align-items: center;
     }
+    .biz-kimiz-amk{  
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        font-size: 80px;
+        color: #343A40;
+    }
     .biz-kimiz-p{
         display: inline-block;
         align-items: center;
@@ -582,8 +591,8 @@ footer{
         text-align: center;
     }
     .sponsorlar-img{
-        width: 60vw;
-        height: 37.25vw;
+        width: 80vw;
+        height: 55vw;
         background-color:#fff;
         border:solid 5vmin #a48111;
         border-bottom-color:#cd9200;
@@ -720,6 +729,20 @@ footer{
     .prevPhotos:hover, .nextPhotos:hover {
         background-color: rgba(0,0,0,0.8);
     }
+
+    footer{
+        width: 100%;
+        background-color: #343A40;
+        height:fit-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-img{
+        width: 240px;
+        height: 150px;
+    }
+
 }
 
 @media screen and (max-width:720px) {
@@ -747,23 +770,23 @@ footer{
         margin-right: auto;
         margin-top: 0px;
         margin-bottom: 0px;
-        font-size: 50px;
+        font-size: 40px;
         color: #343A40;
     }
 
     .biz-kimiz-p{
         display: inline-block;
         align-items: center;
-        width: 40vw;
+        width: 50vw;
         height: fit-content;
         color: #fff;
         background-color: #343A40;
         border-radius: 20px;
-        padding: 10px;
+        padding: 2px;
         text-align: center;
     }
     .biz-kimiz-p > p{
-        font-size: 7px;
+        font-size: 5px;
         margin-bottom: 10px;
     }
     .biz-kimiz-p > .biz-kimiz-title{
@@ -817,7 +840,7 @@ footer{
         height: fit-content;
         text-align: center;
         border-radius: 20px;
-        font-size:small;
+        font-size:xx-small;
         margin-bottom: 20px;
         background-color: #495057;
         color: #fff;
