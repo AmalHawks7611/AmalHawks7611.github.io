@@ -2,10 +2,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 body{
     background-color: #212529;
     font-family: monospace;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
 }
 nav{
     background-color: #343A40;
@@ -127,19 +132,86 @@ nav{
     color: whitesmoke;
     text-decoration: underline whitesmoke;
 }
-.yapim{
+.Contact{
+    color:azure;
+    font-size:xx-large;
+    display: inline-block;
+    
+    margin-bottom: 2vw;
+}
+.mail:hover,.mail:active,.mail:visited,.mail{
+    color: azure;
+    display: inline-block;
+    font-size: xx-large;
+}
+.ContactMedia{
+    color:azure;
+    font-size:xx-large;
+    
+    margin-bottom: 3vw;
+    text-align: center;
+}
+.Logos{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    gap: 2vw;
+    
 }
-.yapim > p{
-    color: #fff;
-    font-size: 40px;
+.Logo{
+    width: 5vw;
+    height: 5vw;
+    
 }
-@media  (min-width: 1024px) {}
+#Linkedin:hover{
+    content: url("../image/AnaSite/Account_Logos/Linkedin_Color.png");
+    width: 5vw;
+    height: 5vw;
+}
+#Github:hover{
+    content: url("../image/AnaSite/Account_Logos/Github_Color.png");
+    width: 5vw;
+    height: 5vw;
+}
+#Youtube:hover{
+    content: url("../image/AnaSite/Account_Logos/Youtube_Color.png");
+    width: 5vw;
+    height: 5vw;
+}
+#Insta:hover{
+    content: url("../image/AnaSite/Account_Logos/Insta_Color.png");
+    width: 5vw;
+    height: 5vw;
+}
+#Twitter:hover{
+    content: url("../image/AnaSite/Account_Logos/Twitter_Color.png");
+    width: 5vw;
+    height: 5vw;
+}
+footer{
+    width: 100%;
+    background-color: #343A40;
+    height:fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    bottom: 0;
+    
+}
+.footer-img{
+    width: 320px;
+    height: 200px;
+}
+
+@media  (min-width: 1025px) {}
 
 @media screen and (min-width:768px) and (max-width:1023px) {
+    body{
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
     .nav-table{
         display: flex;
         height: fit-content;
@@ -154,6 +226,80 @@ nav{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+    .Contact{
+        color:azure;
+        display: inline-block;
+        font-size:x-large;
+        
+        margin-bottom: 2vw;
+    }
+    .mail:hover,.mail:active,.mail:visited,.mail{
+        color: azure;
+        font-size: x-large;
+        display: inline-block;
+    }
+    .ContactMedia{
+        color:azure;
+        font-size:x-large;
+        
+        margin-bottom: 3vw;
+        text-align: center;
+    }
+    .Logos{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 4vw;   
+    }
+    .Logo{
+        width: 5vw;
+        height: 5vw;
+        margin-bottom: 5vw;
+    }
+    #Linkedin:hover{
+        content: url("../image/AnaSite/Account_Logos/Linkedin_Color.png");
+        width: 5vw;
+        height: 5vw;
+        margin-bottom: 5vw;
+    }
+    #Github:hover{
+        content: url("../image/AnaSite/Account_Logos/Github_Color.png");
+        width: 5vw;
+        height: 5vw;
+        margin-bottom: 5vw;
+    }
+    #Youtube:hover{
+        content: url("../image/AnaSite/Account_Logos/Youtube_Color.png");
+        width: 5vw;
+        height: 5vw;
+        margin-bottom: 5vw;
+    }
+    #Insta:hover{
+        content: url("../image/AnaSite/Account_Logos/Insta_Color.png");
+        width: 5vw;
+        height: 5vw;
+        margin-bottom: 5vw;
+    }
+    #Twitter:hover{
+        content: url("../image/AnaSite/Account_Logos/Twitter_Color.png");
+        width: 5vw;
+        height: 5vw;
+        margin-bottom: 5vw;
+    }
+    footer{
+        width: 100vw;
+        background-color: #343A40;
+        height:fit-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: auto;
+        
+    }
+    .footer-img{
+        width: 240px;
+        height: 150px;
     }
 }
 
@@ -173,7 +319,67 @@ nav{
         justify-content: center;
         align-items: center;
     }
-
+    .Contact{
+        color:azure;
+        font-size:9px;
+        display: inline-block;
+        
+        margin-bottom: 2vw;
+    }
+    .mail:hover,.mail:active,.mail:visited,.mail{
+        color: azure;
+        font-size: 9px;
+        display: inline-block;
+    }
+    .ContactMedia{
+        color:azure;
+        font-size:9px;
+        
+        margin-bottom: 3vw;
+        text-align: center;
+    }
+    .Logos{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2vw;
+        
+    }
+    .Logo{
+        width: 7vw;
+        height: 7vw;
+        margin-bottom: 5vw;
+    }
+    #Linkedin:hover{
+        content: url("../image/AnaSite/Account_Logos/Linkedin_Color.png");
+        width: 7vw;
+        height: 7vw;
+        margin-bottom: 5vw;
+    }
+    #Github:hover{
+        content: url("../image/AnaSite/Account_Logos/Github_Color.png");
+        width: 7vw;
+        height: 7vw;
+        margin-bottom: 5vw;
+    }
+    #Youtube:hover{
+        content: url("../image/AnaSite/Account_Logos/Youtube_Color.png");
+        width: 7vw;
+        height: 7vw;
+        margin-bottom: 5vw;
+    }
+    #Insta:hover{
+        content: url("../image/AnaSite/Account_Logos/Insta_Color.png");
+        width: 7vw;
+        height: 7vw;
+        margin-bottom: 5vw;
+    }
+    #Twitter:hover{
+        content: url("../image/AnaSite/Account_Logos/Twitter_Color.png");
+        width: 7vw;
+        height: 7vw;
+        margin-bottom: 5vw;
+    }
     footer{
         width: 100%;
         background-color: #343A40;
@@ -181,6 +387,7 @@ nav{
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-top: auto;
     }
     .footer-img{
         width: 160px;
