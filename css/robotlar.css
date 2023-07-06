@@ -248,7 +248,7 @@ footer{
 @media screen and (min-width:768px) and (max-width:1023px) {
     .nav-table{
         display: flex;
-        height: fit-content;
+        width: 100%;
         justify-content: center;
         align-items: center;
     }
@@ -379,7 +379,7 @@ footer{
 @media screen and (min-width:635px) and (max-width:767px) {
     .nav-table{
         display: flex;
-        height: fit-content;
+        width: 100%;
         justify-content: center;
         align-items: center;
     }
@@ -510,7 +510,7 @@ footer{
 @media screen and (min-width:431px) and (max-width:634px) {
     .nav-table{
         display: flex;
-        height: fit-content;
+        width: 100%;
         justify-content: center;
         align-items: center;
     }
@@ -641,7 +641,7 @@ footer{
 @media screen and (min-width:353px) and (max-width:430px) {
     .nav-table{
         display: flex;
-        height: fit-content;
+        width: 100%;
         justify-content: center;
         align-items: center;
     }
@@ -772,7 +772,7 @@ footer{
 @media screen and (max-width:353px){
     .nav-table{
         display: flex;
-        height: fit-content;
+        width: 100%;
         justify-content: center;
         align-items: center;
     }

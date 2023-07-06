@@ -6,13 +6,12 @@
 body{
     background-color: #212529;
     font-family: monospace;
-    overflow-x: hidden;
 }
 nav{
     background-color: #343A40;
 }
 .nav-table{
-    width: 100vw;
+    width: 100%;
     height: 100px;
 }
 
@@ -157,7 +156,7 @@ nav{
     margin-bottom: 5vw;
 }
 .mmm{
-    width: fit-content;
+    width: 100%;
     height: 31.25vw;
     margin-bottom: 5vw;
     display: flex;
@@ -176,7 +175,7 @@ nav{
     font-size: xx-large;
 }
 .ford{
-    width: 100vw;
+    width: fit-content;
     height: 19.23vw;
     margin-bottom: 5vw;
     display: flex;
@@ -243,7 +242,7 @@ nav{
     text-align: center;
 }
 .sponsors-image-2023{
-    width: 100vw;
+    width: 100%;
     height: 25vw;
 }
 footer{
@@ -327,7 +326,7 @@ footer{
         font-size: x-large;
     }
     .ford{
-        width: 100vw;
+        width: fit-content;
         height: 19.23vw;
         margin-bottom: 5vw;
         display: flex;
@@ -394,7 +393,7 @@ footer{
         text-align: center;
     }
     .sponsors-image-2023{
-        width: 100vw;
+        width: 100%;
         height: 25vw;
     }
     footer{
@@ -416,7 +415,7 @@ footer{
 
 @media screen and (max-width:767px) {
     .nav-table{
-        width: 100vw;
+        width: 100%;
         height: fit-content;
         display: flex;
         height: fit-content;
@@ -480,7 +479,7 @@ footer{
         font-size:9px;
     }
     .ford{
-        width: 100vw;
+        width: fit-content;
         height: 19.23vw;
         margin-bottom: 5vw;
         display: flex;
@@ -547,7 +546,7 @@ footer{
         text-align: center;
     }
     .sponsors-image-2023{
-        width: 100vw;
+        width: 100%;
         height: 25vw;
     }
     footer{
