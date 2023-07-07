@@ -128,19 +128,67 @@ nav{
     color: whitesmoke;
     text-decoration: underline whitesmoke;
 }
-.yapim{
+.about-us-div{
+    background-image: url(../image/AnaSite/About_Us_Bg_Image.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 30vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    margin-bottom: 10vw;
 }
-.yapim > p{
-    color: #fff;
-    font-size: 40px;
+.about-us-title{
+    
+    font-size: 90px;
+    color: aliceblue;
 }
+.title{
+    color: azure;
+    font-size: 50px;
+    margin-top: 2vw;
+    margin-bottom: 1vw;
+}
+.div{
+    width: 99%;
+    margin: 1vw;
+    margin-bottom: 40vw;
+}
+.img{
+    width: 40vw;
+    height: 15.26vw;
+    margin-right: 1vw;
+    height: fit-content;
+    float: left;
+}
+.p{
+    font-size: large;
+    color: aliceblue;
+    margin-left: 1vw;
+}
+footer{
+    width: 100%;
+    background-color: #343A40;
+    height:fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    bottom: 0;
+    
+}
+.footer-img{
+    width: 320px;
+    height: 200px;
+}
+
 @media  (min-width: 1024px) {}
 
-@media screen and (min-width:768px) and (max-width:1023px) {
+@media screen and (min-width:710px) and (max-width:1023px) {
+    body{
+        background-color: aqua;
+    }
     .nav-table{
         display: flex;
         height: fit-content;
@@ -155,10 +203,63 @@ nav{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+    .about-us-div{
+        background-image: url(../image/AnaSite/About_Us_Bg_Image.jpg);
+        background-size:cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 30vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10vw;
+    }
+    .about-us-title{
+        
+        font-size: 70px;
+        color: aliceblue;
+    }
+    .title{
+        color: azure;
+        font-size: 40px;
+        margin-top: 2vw;
+        margin-bottom: 1vw;
+    }
+    .div{
+        width: 99%;
+        margin: 1vw;
+        margin-bottom: 40vw;
+    }
+    .img{
+        width: 40vw;
+        height: 15.26vw;
+        margin-right: 1vw;
+        height: fit-content;
+        float: left;
+    }
+    .p{
+        font-size: large;
+        color: aliceblue;
+        margin-left: 1vw;
+    }
+    footer{
+        width: 100vw;
+        background-color: #343A40;
+        height:fit-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: auto;
+        
+    }
+    .footer-img{
+        width: 240px;
+        height: 150px;
     }
 }
 
-@media screen and (max-width:767px) {
+@media screen and (max-width:710px) {
     .nav-table{
         display: flex;
         height: fit-content;
@@ -174,7 +275,45 @@ nav{
         justify-content: center;
         align-items: center;
     }
-
+    .about-us-div{
+        background-image: url(../image/AnaSite/About_Us_Bg_Image.jpg);
+        background-size:cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 30vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10vw;
+    }
+    .about-us-title{
+        
+        font-size: 60px;
+        color: aliceblue;
+    }
+    .title{
+        color: azure;
+        font-size: 25px;
+        margin-top: 2vw;
+        margin-bottom: 1vw;
+    }
+    .div{
+        width: 99%;
+        margin: 1vw;
+        margin-bottom: 30vw;
+    }
+    .img{
+        width: 40vw;
+        height: 15.26vw;
+        margin-right: 1vw;
+        height: fit-content;
+        float: left;
+    }
+    .p{
+        font-size: medium;
+        color: aliceblue;
+        margin-left: 1vw;
+    }
     footer{
         width: 100%;
         background-color: #343A40;
