@@ -156,19 +156,17 @@ footer{
     .gallery{
         margin-left: 1vw;
         margin-bottom: 1vw;
-        margin-right: 1vw;
         left: 1vw;
         display: grid;
-        width:100%;
+        width:98vw;
         gap: 1vw;
-        grid-template-columns: repeat(5,18.6vw);
+        grid-template-columns: repeat(5,18.4vw);
         grid-template-rows: repeat(6,11.25vw);
         overflow: hidden;
         
     }
     .images{
-        display: block;
-        width:18.6vw;
+        width:18.4vw;
         height: 11.25vw;
     }
     
@@ -203,10 +201,9 @@ footer{
     }
     .gallery{
         margin-left: 1vw;
-        margin-right: 1vw;
         margin-bottom: 1vw;
         display: grid;
-        width:100%;
+        width:98vw;
         grid-template-columns: repeat(3,31.33vw);
         grid-template-rows: repeat(10,20.5vw);
         overflow: hidden;
@@ -216,7 +213,6 @@ footer{
         pointer-events: none;
     }
     .images{
-        display: block;
         width:31.33vw;
         height: 20.5vw;
     }
@@ -252,10 +248,9 @@ footer{
     .gallery{
         margin-left: 1vw;
         margin-bottom: 1vw;
-        margin-right: 1vw;
         display: grid;
-        width:100%;
-        grid-template-columns: repeat(2,47vw);
+        width:98vw;
+        grid-template-columns: repeat(2,47.5vw);
         grid-template-rows: repeat(15,30vw);
         overflow: hidden;
         gap: 1vw;
@@ -264,8 +259,7 @@ footer{
         pointer-events: none;
     }
     .images{
-        display: block;
-        width:47vw;
+        width:47.5vw;
         height: 30vw;
     }
     
