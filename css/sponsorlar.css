@@ -155,7 +155,7 @@ nav{
     color: aliceblue;
     margin-bottom: 5vw;
 }
-.mmm{
+.sponsor{
     width: 100%;
     height: 31.25vw;
     margin-bottom: 5vw;
@@ -163,69 +163,13 @@ nav{
     justify-content: center;
     align-items: center;
 }
-.mmmimage{
+.sponsorimage{
     width: 50vw;
-    height: fit-content;
+    height: 31.25vw;
     float: left;
     background-color: aliceblue;
 }
-.mmmtext{
-    color: aliceblue;
-    text-align: center;
-    font-size: xx-large;
-}
-.ford{
-    width: fit-content;
-    height: 19.23vw;
-    margin-bottom: 5vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.fordimage{
-    width: 50vw;
-    height: fit-content;
-    float: right;
-    background-color: aliceblue;
-}
-.fordtext{
-    color: aliceblue;
-    text-align: center;
-    font-size: xx-large;
-}
-.tc{
-    width: fit-content;
-    height: 27.77vw;
-    margin-bottom: 5vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.tcimage{
-    width: 50vw;
-    height: fit-content;
-    float: right;
-    background-color: aliceblue;
-}
-.tctext{
-    color: aliceblue;
-    text-align: center;
-    font-size: xx-large;
-}
-.amal{
-    width: fit-content;
-    height: 30vw;
-    margin-bottom: 5vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.amalimage{
-    width: 50vw;
-    height: 30vw;
-    background-color: aliceblue;
-}
-.amaltext{
+.sponsortext{
     color: aliceblue;
     text-align: center;
     font-size: xx-large;
@@ -306,7 +250,7 @@ footer{
         color: aliceblue;
         margin-bottom: 5vw;
     }
-    .mmm{
+    .sponsor{
         width: fit-content;
         height: 31.25vw;
         margin-bottom: 5vw;
@@ -314,69 +258,13 @@ footer{
         justify-content: center;
         align-items: center;
     }
-    .mmmimage{
+    .sponsorimage{
         width: 50vw;
-        height: fit-content;
+        height: 31.25vw;
         float: left;
         background-color: aliceblue;
     }
-    .mmmtext{
-        color: aliceblue;
-        text-align: center;
-        font-size: x-large;
-    }
-    .ford{
-        width: fit-content;
-        height: 19.23vw;
-        margin-bottom: 5vw;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .fordimage{
-        width: 50vw;
-        height: fit-content;
-        float: right;
-        background-color: aliceblue;
-    }
-    .fordtext{
-        color: aliceblue;
-        text-align: center;
-        font-size: x-large;
-    }
-    .tc{
-        width: fit-content;
-        height: 27.77vw;
-        margin-bottom: 5vw;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .tcimage{
-        width: 50vw;
-        height: fit-content;
-        float: right;
-        background-color: aliceblue;
-    }
-    .tctext{
-        color: aliceblue;
-        text-align: center;
-        font-size: x-large;
-    }
-    .amal{
-        width: fit-content;
-        height: 30vw;
-        margin-bottom: 5vw;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .amalimage{
-        width: 50vw;
-        height: 30vw;
-        background-color: aliceblue;
-    }
-    .amaltext{
+    .sponsortext{
         color: aliceblue;
         text-align: center;
         font-size: x-large;
@@ -459,7 +347,7 @@ footer{
         color: aliceblue;
         margin-bottom: 5vw;
     }
-    .mmm{
+    .sponsor{
         width: fit-content;
         height: 31.25vw;
         margin-bottom: 5vw;
@@ -467,69 +355,13 @@ footer{
         justify-content: center;
         align-items: center;
     }
-    .mmmimage{
+    .sponsorimage{
         width: 50vw;
-        height: fit-content;
+        height: 31.25vw;
         float: left;
         background-color: aliceblue;
     }
-    .mmmtext{
-        color: aliceblue;
-        text-align: center;
-        font-size:9px;
-    }
-    .ford{
-        width: fit-content;
-        height: 19.23vw;
-        margin-bottom: 5vw;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .fordimage{
-        width: 50vw;
-        height: fit-content;
-        float: right;
-        background-color: aliceblue;
-    }
-    .fordtext{
-        color: aliceblue;
-        text-align: center;
-        font-size:9px;
-    }
-    .tc{
-        width: fit-content;
-        height: 27.77vw;
-        margin-bottom: 5vw;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .tcimage{
-        width: 50vw;
-        height: fit-content;
-        float: right;
-        background-color: aliceblue;
-    }
-    .tctext{
-        color: aliceblue;
-        text-align: center;
-        font-size:9px;
-    }
-    .amal{
-        width: fit-content;
-        height: 30vw;
-        margin-bottom: 5vw;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .amalimage{
-        width: 50vw;
-        height: 30vw;
-        background-color: aliceblue;
-    }
-    .amaltext{
+    .sponsortext{
         color: aliceblue;
         text-align: center;
         font-size:9px;

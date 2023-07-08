@@ -7,6 +7,7 @@ body{
     background-color: #212529;
     font-family: monospace;
     overflow-x: hidden;
+    width: 100vw;
 }
 nav{
     background-color: #343A40;
@@ -129,7 +130,7 @@ nav{
     text-decoration: underline whitesmoke;
 }
 
-.robot-2023{
+.robot{
     display: flex;
     width: fit-content;
     height: fit-content;
@@ -140,94 +141,30 @@ nav{
     color: aliceblue;
     margin: 1vw;
 }
-.info-2023{
+.info{
     margin:1vw;
-    width: 100vw;
+    width: 98vw;
     height: fit-content;
     
 }
-.robot-image-2023{
+.robot-image{
     width: 25vw;
     float: left;
-    margin-right: 10vw;
+    margin-right: 5vw;
 }
+.stats-info{
+    color: aliceblue;
+    font-size: x-large;
+    margin-top: 1vw;
+}
+
 .boldness{
     color: beige;
     font-size: x-large;
     margin-bottom: 1vw;
     margin-right: 2vw
 }
-.stats-info-2023{
-    color: aliceblue;
-    font-size: x-large;
-    margin-top: 1vw;
-}
-.robot-2022{
-    display: flex;
-    width: fit-content;
-    height: fit-content;
-    margin-bottom: 10vw;
-}
-.title-robot{
-    font-size: xx-large;
-    color: aliceblue;
-    margin: 1vw;
-}
-.info-2022{
-    margin:1vw;
-    width: 100vw;
-    height: fit-content;
-    
-}
-.robot-image-2022{
-    width: 25vw;
-    float: left;
-    margin-right: 10vw;
-}
-.boldness{
-    color: beige;
-    font-size: x-large;
-    margin-bottom: 1vw;
-    margin-right: 2vw
-}
-.stats-info-2022{
-    color: aliceblue;
-    font-size: x-large;
-    margin-top: 1vw;
-}
-.robot-2019{
-    display: flex;
-    width: fit-content;
-    height: fit-content;
-    margin-bottom: 10vw;
-}
-.title-robot{
-    font-size: xx-large;
-    color: aliceblue;
-    margin: 1vw;
-}
-.info-2019{
-    margin:1vw;
-    width: 100vw;
-    height: fit-content;
-    
-}
-.robot-image-2019{
-    width: 25vw;
-    float: left;
-    margin-right: 10vw;
-}
-.boldness{
-    color: beige;
-    font-size: x-large;
-    margin-bottom: 1vw;
-    margin-right: 2vw
-}
-.stats-info-2019{
-    color: aliceblue;
-    font-size: x-large;
-    margin-top: 1vw;
-}
+
 footer{
     width: 100%;
     background-color: #343A40;
@@ -261,6 +198,41 @@ footer{
         justify-content: center;
         align-items: center;
     }
+
+    .robot{
+        display: flex;
+        width: fit-content;
+        height: fit-content;
+        margin-bottom: 10vw;
+    }
+    .title-robot{
+        font-size: x-large;
+        color: aliceblue;
+        margin: 1vw;
+    }
+    .info{
+        margin:1vw;
+        width: 98vw;
+        height: fit-content;
+        
+    }
+    .robot-image{
+        width: 25vw;
+        float: left;
+        margin-right: 5vw;
+    }
+    .boldness{
+        color: beige;
+        font-size: large;
+        margin-bottom: 1vw;
+        margin-right: 2vw
+    }
+    .stats-info{
+        color: aliceblue;
+        font-size: large;
+        margin-top: 1vw;
+    }
+
     footer{
         width: 100%;
         background-color: #343A40;
@@ -276,105 +248,7 @@ footer{
         width: 240px;
         height: 160px;
     }
-    .robot-2023{
-        display: flex;
-        width: fit-content;
-        height: fit-content;
-        margin-bottom: 10vw;
-    }
-    .title-robot{
-        font-size: x-large;
-        color: aliceblue;
-        margin: 1vw;
-    }
-    .info-2023{
-        margin:1vw;
-        width: 100vw;
-        height: fit-content;
-        
-    }
-    .robot-image-2023{
-        width: 25vw;
-        float: left;
-        margin-right: 10vw;
-    }
-    .boldness{
-        color: beige;
-        font-size: large;
-        margin-bottom: 1vw;
-        margin-right: 2vw
-    }
-    .stats-info-2023{
-        color: aliceblue;
-        font-size: large;
-        margin-top: 1vw;
-    }
-    .robot-2022{
-        display: flex;
-        width: fit-content;
-        height: fit-content;
-        margin-bottom: 10vw;
-    }
-    .title-robot{
-        font-size: xx-large;
-        color: aliceblue;
-        margin: 1vw;
-    }
-    .info-2022{
-        margin:1vw;
-        width: 100vw;
-        height: fit-content;
-        
-    }
-    .robot-image-2022{
-        width: 25vw;
-        float: left;
-        margin-right: 10vw;
-    }
-    .boldness{
-        color: beige;
-        font-size: large;
-        margin-bottom: 1vw;
-        margin-right: 2vw
-    }
-    .stats-info-2022{
-        color: aliceblue;
-        font-size: large;
-        margin-top: 1vw;
-    }
-    .robot-2019{
-        display: flex;
-        width: fit-content;
-        height: fit-content;
-        margin-bottom: 10vw;
-    }
-    .title-robot{
-        font-size: xx-large;
-        color: aliceblue;
-        margin: 1vw;
-    }
-    .info-2019{
-        margin:1vw;
-        width: 100vw;
-        height: fit-content;
-        
-    }
-    .robot-image-2019{
-        width: 25vw;
-        float: left;
-        margin-right: 10vw;
-    }
-    .boldness{
-        color: beige;
-        font-size: large;
-        margin-bottom: 1vw;
-        margin-right: 2vw
-    }
-    .stats-info-2019{
-        color: aliceblue;
-        font-size: large;
-        margin-top: 1vw;
-    }
+    
 }
 @media screen and (min-width:635px) and (max-width:767px) {
     .nav-table{
@@ -392,6 +266,41 @@ footer{
         justify-content: center;
         align-items: center;
     }
+
+    .robot{
+        display: flex;
+        width: fit-content;
+        height: fit-content;
+        margin-bottom: 10vw;
+    }
+    .title-robot{
+        font-size: x-large;
+        color: aliceblue;
+        margin: 1vw;
+    }
+    .info{
+        margin:1vw;
+        width: 98vw;
+        height: fit-content;
+        
+    }
+    .robot-image{
+        width: 25vw;
+        float: left;
+        margin-right: 5vw;
+    }
+    .boldness{
+        color: beige;
+        font-size: medium;
+        margin-bottom: 1vw;
+        margin-right: 2vw
+    }
+    .stats-info{
+        color: aliceblue;
+        font-size: medium;
+        margin-top: 1vw;
+    }
+
     footer{
         width: 100%;
         background-color: #343A40;
@@ -407,105 +316,8 @@ footer{
         width: 220px;
         height: 140px;
     }
-    .robot-2023{
-        display: flex;
-        width: fit-content;
-        height: fit-content;
-        margin-bottom: 10vw;
-    }
-    .title-robot{
-        font-size: x-large;
-        color: aliceblue;
-        margin: 1vw;
-    }
-    .info-2023{
-        margin:1vw;
-        width: 100vw;
-        height: fit-content;
-        
-    }
-    .robot-image-2023{
-        width: 25vw;
-        float: left;
-        margin-right: 10vw;
-    }
-    .boldness{
-        color: beige;
-        font-size: medium;
-        margin-bottom: 1vw;
-        margin-right: 2vw
-    }
-    .stats-info-2023{
-        color: aliceblue;
-        font-size: medium;
-        margin-top: 1vw;
-    }
-    .robot-2022{
-        display: flex;
-        width: fit-content;
-        height: fit-content;
-        margin-bottom: 10vw;
-    }
-    .title-robot{
-        font-size: xx-large;
-        color: aliceblue;
-        margin: 1vw;
-    }
-    .info-2022{
-        margin:1vw;
-        width: 100vw;
-        height: fit-content;
-        
-    }
-    .robot-image-2022{
-        width: 25vw;
-        float: left;
-        margin-right: 10vw;
-    }
-    .boldness{
-        color: beige;
-        font-size: medium;
-        margin-bottom: 1vw;
-        margin-right: 2vw
-    }
-    .stats-info-2022{
-        color: aliceblue;
-        font-size: medium;
-        margin-top: 1vw;
-    }
-    .robot-2019{
-        display: flex;
-        width: fit-content;
-        height: fit-content;
-        margin-bottom: 10vw;
-    }
-    .title-robot{
-        font-size: xx-large;
-        color: aliceblue;
-        margin: 1vw;
-    }
-    .info-2019{
-        margin:1vw;
-        width: 100vw;
-        height: fit-content;
-        
-    }
-    .robot-image-2019{
-        width: 25vw;
-        float: left;
-        margin-right: 10vw;
-    }
-    .boldness{
-        color: beige;
-        font-size: medium;
-        margin-bottom: 1vw;
-        margin-right: 2vw
-    }
-    .stats-info-2019{
-        color: aliceblue;
-        font-size: medium;
-        margin-top: 1vw;
-    }
+    
+    
 }
 @media screen and (min-width:431px) and (max-width:634px) {
     .nav-table{
@@ -523,6 +335,41 @@ footer{
         justify-content: center;
         align-items: center;
     }
+
+    .robot{
+        display: flex;
+        width: fit-content;
+        height: fit-content;
+        margin-bottom: 10vw;
+    }
+    .title-robot{
+        font-size: large;
+        color: aliceblue;
+        margin: 1vw;
+    }
+    .info{
+        margin:1vw;
+        width: 98vw;
+        height: fit-content;
+        
+    }
+    .robot-image{
+        width: 25vw;
+        float: left;
+        margin-right: 5vw;
+    }
+    .boldness{
+        color: beige;
+        font-size: 9px;
+        margin-bottom: 1vw;
+        margin-right: 2vw
+    }
+    .stats-info{
+        color: aliceblue;
+        font-size: 9px;
+        margin-top: 1vw;
+    }
+
     footer{
         width: 100%;
         background-color: #343A40;
@@ -538,105 +385,7 @@ footer{
         width: 220px;
         height: 140px;
     }
-    .robot-2023{
-        display: flex;
-        width: fit-content;
-        height: fit-content;
-        margin-bottom: 10vw;
-    }
-    .title-robot{
-        font-size: large;
-        color: aliceblue;
-        margin: 1vw;
-    }
-    .info-2023{
-        margin:1vw;
-        width: 100vw;
-        height: fit-content;
-        
-    }
-    .robot-image-2023{
-        width: 25vw;
-        float: left;
-        margin-right: 10vw;
-    }
-    .boldness{
-        color: beige;
-        font-size: 9px;
-        margin-bottom: 1vw;
-        margin-right: 2vw
-    }
-    .stats-info-2023{
-        color: aliceblue;
-        font-size: 12px;
-        margin-top: 1vw;
-    }
-    .robot-2022{
-        display: flex;
-        width: fit-content;
-        height: fit-content;
-        margin-bottom: 10vw;
-    }
-    .title-robot{
-        font-size: large;
-        color: aliceblue;
-        margin: 1vw;
-    }
-    .info-2022{
-        margin:1vw;
-        width: 100vw;
-        height: fit-content;
-        
-    }
-    .robot-image-2022{
-        width: 25vw;
-        float: left;
-        margin-right: 10vw;
-    }
-    .boldness{
-        color: beige;
-        font-size: xx-small;
-        margin-bottom: 1vw;
-        margin-right: 2vw
-    }
-    .stats-info-2022{
-        color: aliceblue;
-        font-size: 12px;
-        margin-top: 1vw;
-    }
-    .robot-2019{
-        display: flex;
-        width: fit-content;
-        height: fit-content;
-        margin-bottom: 10vw;
-    }
-    .title-robot{
-        font-size: large;
-        color: aliceblue;
-        margin: 1vw;
-    }
-    .info-2019{
-        margin:1vw;
-        width: 100vw;
-        height: fit-content;
-        
-    }
-    .robot-image-2019{
-        width: 25vw;
-        float: left;
-        margin-right: 10vw;
-    }
-    .boldness{
-        color: beige;
-        font-size: 12px;
-        margin-bottom: 1vw;
-        margin-right: 2vw
-    }
-    .stats-info-2019{
-        color: aliceblue;
-        font-size: 12px;
-        margin-top: 1vw;
-    }
+    
 }
 @media screen and (min-width:353px) and (max-width:430px) {
     .nav-table{
@@ -654,6 +403,41 @@ footer{
         justify-content: center;
         align-items: center;
     }
+
+    .robot{
+        display: flex;
+        width: fit-content;
+        height: fit-content;
+        margin-bottom: 10vw;
+    }
+    .title-robot{
+        font-size: large;
+        color: aliceblue;
+        margin: 1vw;
+    }
+    .info{
+        margin:1vw;
+        width: 98vw;
+        height: fit-content;
+        
+    }
+    .robot-image{
+        width: 25vw;
+        float: left;
+        margin-right: 5vw;
+    }
+    .boldness{
+        color: beige;
+        font-size: 7px;
+        margin-bottom: 1vw;
+        margin-right: 2vw
+    }
+    .stats-info{
+        color: aliceblue;
+        font-size: 7px;
+        margin-top: 1vw;
+    }
+
     footer{
         width: 100%;
         background-color: #343A40;
@@ -669,105 +453,8 @@ footer{
         width: 160px;
         height: 100px;
     }
-    .robot-2023{
-        display: flex;
-        width: fit-content;
-        height: fit-content;
-        margin-bottom: 10vw;
-    }
-    .title-robot{
-        font-size: large;
-        color: aliceblue;
-        margin: 1vw;
-    }
-    .info-2023{
-        margin:1vw;
-        width: 100vw;
-        height: fit-content;
-        
-    }
-    .robot-image-2023{
-        width: 25vw;
-        float: left;
-        margin-right: 10vw;
-    }
-    .boldness{
-        color: beige;
-        font-size: small;
-        margin-bottom: 1vw;
-        margin-right: 2vw
-    }
-    .stats-info-2023{
-        color: aliceblue;
-        font-size: 7px;
-        margin-top: 1vw;
-    }
-    .robot-2022{
-        display: flex;
-        width: fit-content;
-        height: fit-content;
-        margin-bottom: 10vw;
-    }
-    .title-robot{
-        font-size: large;
-        color: aliceblue;
-        margin: 1vw;
-    }
-    .info-2022{
-        margin:1vw;
-        width: 100vw;
-        height: fit-content;
-        
-    }
-    .robot-image-2022{
-        width: 25vw;
-        float: left;
-        margin-right: 10vw;
-    }
-    .boldness{
-        color: beige;
-        font-size: 7px;
-        margin-bottom: 1vw;
-        margin-right: 2vw
-    }
-    .stats-info-2022{
-        color: aliceblue;
-        font-size: 7px;
-        margin-top: 1vw;
-    }
-    .robot-2019{
-        display: flex;
-        width: fit-content;
-        height: fit-content;
-        margin-bottom: 10vw;
-    }
-    .title-robot{
-        font-size: large;
-        color: aliceblue;
-        margin: 1vw;
-    }
-    .info-2019{
-        margin:1vw;
-        width: 100vw;
-        height: fit-content;
-        
-    }
-    .robot-image-2019{
-        width: 25vw;
-        float: left;
-        margin-right: 10vw;
-    }
-    .boldness{
-        color: beige;
-        font-size: 7px;
-        margin-bottom: 1vw;
-        margin-right: 2vw
-    }
-    .stats-info-2019{
-        color: aliceblue;
-        font-size: 7px;
-        margin-top: 1vw;
-    }
+    
+    
 }
 @media screen and (max-width:353px){
     .nav-table{
@@ -785,6 +472,41 @@ footer{
         justify-content: center;
         align-items: center;
     }
+    
+    .robot{
+        display: flex;
+        width: fit-content;
+        height: fit-content;
+        margin-bottom: 10vw;
+    }
+    .title-robot{
+        font-size: large;
+        color: aliceblue;
+        margin: 1vw;
+    }
+    .info{
+        margin:1vw;
+        width: 98vw;
+        height: fit-content;
+        
+    }
+    .robot-image{
+        width: 25vw;
+        float: left;
+        margin-right: 5vw;
+    }
+    .boldness{
+        color: beige;
+        font-size: 5px;
+        margin-bottom: 1vw;
+        margin-right: 2vw
+    }
+    .stats-info{
+        color: aliceblue;
+        font-size: 5px;
+        margin-top: 1vw;
+    }
+    
     footer{
         width: 100%;
         background-color: #343A40;
@@ -796,107 +518,11 @@ footer{
         bottom: 0;
         
     }
+
     .footer-img{
         width: 100px;
         height: 80px;
     }
-    .robot-2023{
-        display: flex;
-        width: fit-content;
-        height: fit-content;
-        margin-bottom: 10vw;
-    }
-    .title-robot{
-        font-size: large;
-        color: aliceblue;
-        margin: 1vw;
-    }
-    .info-2023{
-        margin:1vw;
-        width: 100vw;
-        height: fit-content;
-        
-    }
-    .robot-image-2023{
-        width: 25vw;
-        float: left;
-        margin-right: 10vw;
-    }
-    .boldness{
-        color: beige;
-        font-size: small;
-        margin-bottom: 1vw;
-        margin-right: 2vw
-    }
-    .stats-info-2023{
-        color: aliceblue;
-        font-size: 5px;
-        margin-top: 1vw;
-    }
-    .robot-2022{
-        display: flex;
-        width: fit-content;
-        height: fit-content;
-        margin-bottom: 10vw;
-    }
-    .title-robot{
-        font-size: large;
-        color: aliceblue;
-        margin: 1vw;
-    }
-    .info-2022{
-        margin:1vw;
-        width: 100vw;
-        height: fit-content;
-        
-    }
-    .robot-image-2022{
-        width: 25vw;
-        float: left;
-        margin-right: 10vw;
-    }
-    .boldness{
-        color: beige;
-        font-size: 7px;
-        margin-bottom: 1vw;
-        margin-right: 2vw
-    }
-    .stats-info-2022{
-        color: aliceblue;
-        font-size: 5px;
-        margin-top: 1vw;
-    }
-    .robot-2019{
-        display: flex;
-        width: fit-content;
-        height: fit-content;
-        margin-bottom: 10vw;
-    }
-    .title-robot{
-        font-size: large;
-        color: aliceblue;
-        margin: 1vw;
-    }
-    .info-2019{
-        margin:1vw;
-        width: 100vw;
-        height: fit-content;
-        
-    }
-    .robot-image-2019{
-        width: 25vw;
-        float: left;
-        margin-right: 10vw;
-    }
-    .boldness{
-        color: beige;
-        font-size: 5px;
-        margin-bottom: 1vw;
-        margin-right: 2vw
-    }
-    .stats-info-2019{
-        color: aliceblue;
-        font-size: 5px;
-        margin-top: 1vw;
-    }
+    
+    
 }

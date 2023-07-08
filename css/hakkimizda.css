@@ -129,7 +129,7 @@ nav{
     text-decoration: underline whitesmoke;
 }
 .about-us-div{
-    background-image: url(../image/AnaSite/About_Us_Bg_Image.jpg);
+    background-image: url(../image/About_Us/About_Us_Bg_Image.jpg);
     background-size:cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -140,7 +140,6 @@ nav{
     margin-bottom: 10vw;
 }
 .about-us-title{
-    
     font-size: 90px;
     color: aliceblue;
 }

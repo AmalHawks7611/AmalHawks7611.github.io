@@ -135,7 +135,7 @@ nav{
     height:56vw;
     margin-bottom: 20vw;
     display: flex;
-    background-image: url('../image/AnaSite/Toplu\ Foto.jpg'); 
+    background-image: url('../image/MainPage/Toplu\ Foto.jpg'); 
     background-size:100%; 
     background-repeat: no-repeat; 
     box-sizing: border-box;
@@ -157,7 +157,7 @@ nav{
     align-items: center;
     justify-content:center;
     flex-direction: column;
-    background-image: url("../image/AnaSite/Biz\ Kimiz.jpg");
+    background-image: url("../image/MainPage/Biz\ Kimiz.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-repeat: no-repeat;
@@ -216,7 +216,7 @@ nav{
     flex-direction: column;
     width: 41vw;
     height: 45vh;
-    background-image: url("../image/AnaSite/anasayfabutonu.jpg");
+    background-image: url("../image/MainPage/anasayfabutonu.jpg");
     background-size: 41vw;
     background-clip: border-box;
     background-position-y:center;
