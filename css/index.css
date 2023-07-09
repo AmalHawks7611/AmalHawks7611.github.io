@@ -2,12 +2,12 @@
 *{
     margin: 0;
     padding: 0;
-   
 }
 body{
     overflow-x: hidden;
     background-color: #212529;
     font-family: monospace;
+    width: 100%;
 }
 nav{
     background-color: #343A40;
@@ -131,79 +131,55 @@ nav{
     text-decoration: underline whitesmoke;
 }
 .hakkimizda-div{
-    width: 100vw;
-    height:56vw;
+    width: 100%;
+    height:70vw;
     margin-bottom: 20vw;
     display: flex;
-    background-image: url('../image/MainPage/Toplu\ Foto.jpg'); 
-    background-size:100%; 
+    background-image: url('../image/MainPage/Toplu\ Foto\ 2.jpg'); 
+    background-size:cover; 
     background-repeat: no-repeat; 
     box-sizing: border-box;
 }
-.biz-kimiz-amk{  
+.amal-hawks-7611{  
     text-align: center;
     margin-left: auto;
     margin-right: auto;
     margin-top: 0px;
     margin-bottom: 0px;
     font-size: 100px;
-    color: #343A40;
+    color: aliceblue;
 }
 .iletisim-div{
     width: 100%;
-    height: 62.6vw;
+    height: 50vw;
     margin-bottom: 20vw;
     display: flex;
     align-items: center;
     justify-content:center;
-    flex-direction: column;
-    background-image: url("../image/MainPage/Biz\ Kimiz.jpg");
+    background-image: url("../image/MainPage/Fotoglar\ Maskot.jpg"),url("/image/MainPage/Fotolar\ Odul.jpg");
+    background-repeat: no-repeat,no-repeat;
+    background-position: left,right;
+    background-size: 30vw,30vw;
     background-repeat: no-repeat;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position-y:center ;
 }
-.biz-kimiz-p{
+.biz-kimiz-div{
     display: inline-block;
-    align-items: center;
     width: 40vw;
-    height: fit-content;
+    height: 50vw;
     color: #fff;
     background-color: #343A40;
-    border-radius: 20px;
-    padding: 15px;
     text-align: center;
 }
-.biz-kimiz-p > p{
-    font-size: 20px;
-    margin-bottom: 30px;
-}
-.biz-kimiz-p > .biz-kimiz-title{
+.biz-kimiz-title{
     font-size: 40px;
+    margin-bottom: 20px;
 }
-.biz-kimiz-more:link,.biz-kimiz-more:visited{
-    display: inline-block;
-    padding: 14px 25px;
-    text-decoration: none;
-    color: #fff;
-    font-weight: bolder;
-    border: 5px solid #495057;
-    margin-top: 20px;
+.biz-kimiz-p{
     font-size: 20px;
-}
-.biz-kimiz-more:hover,.biz-kimiz-more:active{
-    display: inline-block;
-    padding: 14px 25px;
-    text-decoration: none;
-    color: whitesmoke;
-    font-weight: bolder;
-    border: 5px solid #495057;
-    background-color: #495057;
-    margin-top: 20px;
-    font-size: 20px;
+    margin: 1vw;
 }
 .robotlar-div{
-    width: 100vw;
+    width: 100%;
     height: 45vh;
     margin-bottom: 20vw;
     display: flex;
@@ -221,20 +197,12 @@ nav{
     background-clip: border-box;
     background-position-y:center;
     background-repeat: no-repeat;
- 
 }
-.robot-2019{
+.robot{
     width: 30vw;
     height: 45vh;
 }
-.robot-2019:hover{
-    opacity: 0.7;
-}
-.robot-2023{
-    width: 30vw;
-    height: 45vh;
-}
-.robot-2023:hover{
+.robot:hover{
     opacity: 0.7;
 }
 .robotlar-div-p{
@@ -288,12 +256,12 @@ nav{
     width: 60vw;
     height: 37.25vw;
     background-color:#fff;
-    border:solid 5vmin #a48111;
-    border-bottom-color:#cd9200;
-    border-left-color:#cb9b21;
+    border:solid 5vmin #111;
+    border-bottom-color:#000;
+    border-left-color:#111;
     border-radius:2px;
-    border-right-color:#cb9b21;
-    border-top-color:#cba125;
+    border-right-color:#111;
+    border-top-color:#222;
     box-shadow:0 0 5px 0 rgba(0,0,0,.25) inset, 0 5px 10px 5px rgba(0,0,0,.25);
     box-sizing:border-box;
     display:inline-block;
@@ -367,7 +335,7 @@ nav{
 .photos-img{
     width: 60vw;
     height: 37.25vw;
-    background-color:#223;
+    background-color:#fff;
     border:solid 5vmin #111;
     border-bottom-color:#000;
     border-left-color:#111;
@@ -451,7 +419,7 @@ footer{
 
 @media screen and (min-width:720px) and (max-width:1023px) {
     .nav-table{
-        width: 100vw;
+        width: 100%;
         display: flex;
         height: fit-content;
         justify-content: center;
@@ -466,32 +434,29 @@ footer{
         justify-content: center;
         align-items: center;
     }
-    .biz-kimiz-amk{  
+    .amal-hawks-7611{  
         text-align: center;
         margin-left: auto;
         margin-right: auto;
         margin-top: 0px;
         margin-bottom: 0px;
         font-size: 80px;
-        color: #343A40;
+        color: aliceblue;
     }
-    .biz-kimiz-p{
+    .biz-kimiz-div{
         display: inline-block;
-        align-items: center;
         width: 40vw;
-        height: fit-content;
+        height: 50vw;
         color: #fff;
         background-color: #343A40;
-        border-radius: 20px;
-        padding: 15px;
         text-align: center;
     }
-    .biz-kimiz-p > p{
-        font-size: 10px;
-        margin-bottom: 30px;
+    .biz-kimiz-p{
+        font-size: 11px;
     }
-    .biz-kimiz-p > .biz-kimiz-title{
+    .biz-kimiz-title{
         font-size: 20px;
+        margin-bottom: 10px;
     }
     .biz-kimiz-more:link,.biz-kimiz-more:visited{
         display: inline-block;
@@ -521,7 +486,7 @@ footer{
         flex-direction: column;
         width: 41vw;
         height: 45vh;
-        background-image: url("../image/AnaSite/anasayfabutonu.jpg");
+        background-image: url("../image/MainPage/anasayfabutonu.jpg");
         background-size:cover;
         background-clip:border-box;
         background-position-y:center;
@@ -556,18 +521,11 @@ footer{
         background-color: #495057;
         font-size: 10px;
     }
-    .robot-2019{
+    .robot{
         width: 30vw;
         height: 45vh;
     }
-    .robot-2019:hover{
-        opacity: 0.7;
-    }
-    .robot-2023{
-        width: 30vw;
-        height: 45vh;
-    }
-    .robot-2023:hover{
+    .robot:hover{
         opacity: 0.7;
     }
     .sponsorlar-div{
@@ -592,12 +550,12 @@ footer{
         width: 80vw;
         height: 55vw;
         background-color:#fff;
-        border:solid 5vmin #a48111;
-        border-bottom-color:#cd9200;
-        border-left-color:#cb9b21;
+        border:solid 5vmin #111;
+        border-bottom-color:#000;
+        border-left-color:#111;
         border-radius:2px;
-        border-right-color:#cb9b21;
-        border-top-color:#cba125;
+        border-right-color:#111;
+        border-top-color:#222;
         box-shadow:0 0 5px 0 rgba(0,0,0,.25) inset, 0 5px 10px 5px rgba(0,0,0,.25);
         box-sizing:border-box;
         display:inline-block;
@@ -670,7 +628,7 @@ footer{
     .photos-img{
         width: 80vw;
         height: 55vw;
-        background-color:#223;
+        background-color:#fff;
         border:solid 5vmin #111;
         border-bottom-color:#000;
         border-left-color:#111;
@@ -729,7 +687,7 @@ footer{
     }
 
     footer{
-        width: 100vw;
+        width: 100%;
         background-color: #343A40;
         height:fit-content;
         display: flex;
@@ -745,7 +703,7 @@ footer{
 
 @media screen and (max-width:720px) {
     .nav-table{
-        width: 100vw;
+        width: 100%;
         display: flex;
         height: fit-content;
         justify-content: center;
@@ -760,57 +718,34 @@ footer{
         justify-content: center;
         align-items: center;
     }
-    .biz-kimiz-amk{  
+    .amal-hawks-7611{  
         text-align: center;
         margin-left: auto;
         margin-right: auto;
         margin-top: 0px;
         margin-bottom: 0px;
         font-size: 40px;
-        color: #343A40;
+        color: aliceblue;
     }
-
-    .biz-kimiz-p{
-        display: inline-block;
-        align-items: center;
-        width: 50vw;
-        height: fit-content;
+    .biz-kimiz-div{
+        display: flex;
+        flex-direction: column;
+        width: 40vw;
+        height: 50vw;
         color: #fff;
         background-color: #343A40;
-        border-radius: 20px;
-        padding: 2px;
         text-align: center;
     }
-    .biz-kimiz-p > p{
-        font-size: 5px;
-        margin-bottom: 10px;
+    .biz-kimiz-p{
+        font-size: 4.5px;
     }
-    .biz-kimiz-p > .biz-kimiz-title{
+    .biz-kimiz-title{
         font-size: 10px;
+        margin-bottom: 5px;
     }
-    .biz-kimiz-more:link,.biz-kimiz-more:visited{
-        display: inline-block;
-        padding: 7px 12.5px;
-        text-decoration: none;
-        color: #fff;
-        font-weight: bolder;
-        border: 2.5px solid #495057;
-        margin-top: 10px;
-        font-size: 10px;
-    }
-    .biz-kimiz-more:hover,.biz-kimiz-more:active{
-        display: inline-block;
-        padding: 7px 12.5px;
-        text-decoration: none;
-        color: whitesmoke;
-        font-weight: bolder;
-        border: 2.5px solid #495057;
-        background-color: #495057;
-        margin-top: 10px;
-        font-size: 10px;
-    }
+
     .robotlar-div{
-        width: 100vw;
+        width: 100%;
         height: fit-content;
         margin-bottom: 20vw;
         display: flex;
@@ -821,16 +756,15 @@ footer{
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        width: 41vw;
+        width: 42vw;
         height: 35vh;
-        background-image: url("../image/AnaSite/anasayfabutonu.jpg");
+        background-image: url("../image/MainPage/anasayfabutonu.jpg");
         background-size:cover;
         background-clip:border-box;
         background-position-y:center;
         background-repeat: no-repeat;
     }
     .robotlar-div-p{
-        
         width: 40vw;
         padding: 1px;
         height: fit-content;
@@ -858,18 +792,11 @@ footer{
         background-color: #495057;
         font-size: 10px;
     }
-    .robot-2019{
+    .robot{
         width: 30vw;
         height: 35vh;
     }
-    .robot-2019:hover{
-        opacity: 0.7;
-    }
-    .robot-2023{
-        width:30vw;
-        height: 35vh;
-    }
-    .robot-2023:hover{
+    .robot:hover{
         opacity: 0.7;
     }
     .sponsorlar-div{
@@ -894,12 +821,12 @@ footer{
         width: 90vw;
         height: 54.9vw;
         background-color:#fff;
-        border:solid 5vmin #a48111;
-        border-bottom-color:#cd9200;
-        border-left-color:#cb9b21;
+        border:solid 5vmin #111;
+        border-bottom-color:#000;
+        border-left-color:#111;
         border-radius:2px;
-        border-right-color:#cb9b21;
-        border-top-color:#cba125;
+        border-right-color:#111;
+        border-top-color:#222;
         box-shadow:0 0 5px 0 rgba(0,0,0,.25) inset, 0 5px 10px 5px rgba(0,0,0,.25);
         box-sizing:border-box;
         display:inline-block;
@@ -962,7 +889,7 @@ footer{
     .photos-img{
         width: 90vw;
         height: 54.9vw;
-        background-color:#223;
+        background-color:#fff;
         border:solid 5vmin #111;
         border-bottom-color:#000;
         border-left-color:#111;
@@ -1021,7 +948,7 @@ footer{
     }
 
     footer{
-        width: 100vw;
+        width: 100%;
         background-color: #343A40;
         height: fit-content;
         display: flex;

@@ -127,68 +127,7 @@ nav{
     color: whitesmoke;
     text-decoration: underline whitesmoke;
 }
-.why-sponsor{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-.title{
-    color: aliceblue;
-    font-size: 50px;
-    text-align: center;
-}
-.article-space{
-    width: 50vw;
-    height: fit-content;
-}
-.article{
-    text-align: center;
-    margin-top: 1vw;
-    color: aliceblue;
-    font-size: xx-large;
-    margin-bottom: 15vw;
-}
-.main-sponsors{
-    text-align: center;
-    font-size: 50px;
-    color: aliceblue;
-    margin-bottom: 5vw;
-}
-.sponsor{
-    width: 100%;
-    height: 31.25vw;
-    margin-bottom: 5vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.sponsorimage{
-    width: 50vw;
-    height: 31.25vw;
-    float: left;
-    background-color: aliceblue;
-}
-.sponsortext{
-    color: aliceblue;
-    text-align: center;
-    font-size: xx-large;
-}
-.sponsors-2023{
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 5vw;
-}
-.title-2023-sponsors{
-    color: aliceblue;
-    font-size: 50px;
-    margin-bottom: 5vw;
-    text-align: center;
-}
-.sponsors-image-2023{
-    width: 100%;
-    height: 25vw;
-}
+
 footer{
     width: 100%;
     background-color: #343A40;
@@ -204,7 +143,101 @@ footer{
     width: 320px;
     height: 200px;
 }
-@media  (min-width: 1024px) {}
+@media  (min-width: 1024px) {
+    .why-sponsor{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .title{
+        color: aliceblue;
+        font-size: 50px;
+        text-align: center;
+    }
+    .article-space{
+        width: 50vw;
+        height: fit-content;
+    }
+    .article{
+        text-align: center;
+        margin-top: 1vw;
+        color: aliceblue;
+        font-size: xx-large;
+        margin-bottom: 15vw;
+    }
+    .main-sponsors{
+        text-align: center;
+        font-size: 50px;
+        color: aliceblue;
+        margin-bottom: 5vw;
+    }
+    .sponsor{
+        width: 100%;
+        height: 31.25vw;
+        margin-bottom: 5vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .sponsorimage{
+        width: 40vw;
+        height: 31.25vw;
+        float: left;
+        background-color: #fff;
+        border:solid 5vmin #111;
+        border-bottom-color:#000;
+        border-left-color:#111;
+        border-radius:2px;
+        border-right-color:#111;
+        border-top-color:#222;
+        box-shadow:0 0 5px 0 rgba(0,0,0,.25) inset, 0 5px 10px 5px rgba(0,0,0,.25);
+        box-sizing:border-box;
+        padding:8vmin;
+        position:relative;
+        text-align:center;
+        &:before {
+            border-radius:2px;
+            bottom:-2vmin;
+            box-shadow:0 2px 5px 0 rgba(0,0,0,.25) inset;
+            content:"";
+            left:-2vmin;
+            position:absolute;
+            right:-2vmin;
+            top:-2vmin;
+        }
+        &:after {
+            border-radius:2px;
+            bottom:-2.5vmin;
+            box-shadow: 0 2px 5px 0 rgba(0,0,0,.25);
+            content:"";
+            left:-2.5vmin;
+            position:absolute;
+            right:-2.5vmin;
+            top:-2.5vmin;
+        }
+    }
+    .sponsortext{
+        color: aliceblue;
+        text-align: center;
+        font-size: xx-large;
+    }
+    .sponsors-2023{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 5vw;
+    }
+    .title-2023-sponsors{
+        color: aliceblue;
+        font-size: 50px;
+        margin-bottom: 5vw;
+        text-align: center;
+    }
+    .sponsors-image-2023{
+        width: 100%;
+        height: 25vw;
+    }
+}
 
 @media screen and (min-width:768px) and (max-width:1023px) {
     .nav-table{
@@ -359,7 +392,7 @@ footer{
         width: 50vw;
         height: 31.25vw;
         float: left;
-        background-color: aliceblue;
+        background-color: #fff;
     }
     .sponsortext{
         color: aliceblue;
