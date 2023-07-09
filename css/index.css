@@ -135,7 +135,7 @@ nav{
     height:70vw;
     margin-bottom: 20vw;
     display: flex;
-    background-image: url('../image/MainPage/Toplu\ Foto\ 2.jpg'); 
+    background-image: url('../image/MainPage/Toplu\ Foto\ 2.avif'); 
     background-size:cover; 
     background-repeat: no-repeat; 
     box-sizing: border-box;
@@ -156,7 +156,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content:center;
-    background-image: url("../image/MainPage/Fotoglar\ Maskot.jpg"),url("/image/MainPage/Fotolar\ Odul.jpg");
+    background-image: url("../image/MainPage/Fotoglar\ Maskot.avif"),url("/image/MainPage/Fotolar\ Odul.avif");
     background-repeat: no-repeat,no-repeat;
     background-position: left,right;
     background-size: 30vw,30vw;
@@ -175,7 +175,7 @@ nav{
     margin-bottom: 20px;
 }
 .biz-kimiz-p{
-    font-size: 20px;
+    font-size: 18px;
     margin: 1vw;
 }
 .robotlar-div{
@@ -192,7 +192,7 @@ nav{
     flex-direction: column;
     width: 41vw;
     height: 45vh;
-    background-image: url("../image/MainPage/anasayfabutonu.jpg");
+    background-image: url("../image/MainPage/anasayfabutonu.avif");
     background-size: 41vw;
     background-clip: border-box;
     background-position-y:center;
@@ -486,7 +486,7 @@ footer{
         flex-direction: column;
         width: 41vw;
         height: 45vh;
-        background-image: url("../image/MainPage/anasayfabutonu.jpg");
+        background-image: url("../image/MainPage/anasayfabutonu.avif");
         background-size:cover;
         background-clip:border-box;
         background-position-y:center;
@@ -758,7 +758,7 @@ footer{
         flex-direction: column;
         width: 42vw;
         height: 35vh;
-        background-image: url("../image/MainPage/anasayfabutonu.jpg");
+        background-image: url("../image/MainPage/anasayfabutonu.avif");
         background-size:cover;
         background-clip:border-box;
         background-position-y:center;

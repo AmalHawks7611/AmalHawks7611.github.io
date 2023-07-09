@@ -129,7 +129,7 @@ nav{
     text-decoration: underline whitesmoke;
 }
 .about-us-div{
-    background-image: url(../image/About_Us/About_Us_Bg_Image.jpg);
+    background-image: url(../image/About_Us/About_Us_Bg_Image.avif);
     background-size:cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -201,7 +201,7 @@ footer{
         align-items: center;
     }
     .about-us-div{
-        background-image: url(../image/AnaSite/About_Us_Bg_Image.jpg);
+        background-image: url(../image/AnaSite/About_Us_Bg_Image.avif);
         background-size:cover;
         background-repeat: no-repeat;
         width: 100%;
@@ -272,7 +272,7 @@ footer{
         align-items: center;
     }
     .about-us-div{
-        background-image: url(../image/AnaSite/About_Us_Bg_Image.jpg);
+        background-image: url(../image/AnaSite/About_Us_Bg_Image.avif);
         background-size:cover;
         background-repeat: no-repeat;
         width: 100%;
