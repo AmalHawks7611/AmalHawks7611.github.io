@@ -154,8 +154,8 @@ footer{
 }
 .hiddeny{
     opacity: 0;
-    transform: translateY(-100%);
-    transition: all 1s;
+    transform: translateY(-10%);
+    transition: ease 1s;
 }
 .showy{
     opacity: 1;
@@ -189,6 +189,7 @@ footer{
     .images{
         width:18.4vw;
         height: 11.25vw;
+        margin-bottom: 2vw;
     }
     
 }
@@ -236,6 +237,7 @@ footer{
     .images{
         width:31.33vw;
         height: 20.5vw;
+        margin-bottom: 2vw;
     }
 }
 
@@ -282,6 +284,7 @@ footer{
     .images{
         width:47.5vw;
         height: 30vw;
+        margin-bottom: 2vw;
     }
     
     footer{
