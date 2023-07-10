@@ -157,9 +157,8 @@ nav{
 }
 .img{
     width: 40vw;
-    height: 15.26vw;
+    height: 20.26vw;
     margin-right: 1vw;
-    height: fit-content;
     float: left;
 }
 .p{
@@ -259,7 +258,7 @@ footer{
     }
     .img{
         width: 40vw;
-        height: 15.26vw;
+ height: 20.26vw;
         margin-right: 1vw;
         height: fit-content;
         float: left;
@@ -330,9 +329,8 @@ footer{
     }
     .img{
         width: 40vw;
-        height: 15.26vw;
+ height: 20.26vw;
         margin-right: 1vw;
-        height: fit-content;
         float: left;
     }
     .p{
