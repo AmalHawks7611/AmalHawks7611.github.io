@@ -151,6 +151,7 @@ nav{
 }
 .div{
     width: 99%;
+    height: fit-content;
     margin: 1vw;
     margin-bottom: 40vw;
 }
@@ -165,6 +166,28 @@ nav{
     font-size: large;
     color: aliceblue;
     margin-left: 1vw;
+}
+.hiddenx{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+.showx{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0)
+}
+.hiddeny{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(-100%);
+    transition: all 1s;
+}
+.showy{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
 }
 footer{
     width: 100%;
@@ -182,7 +205,14 @@ footer{
     height: 200px;
 }
 
-@media  (min-width: 1024px) {}
+@media  (min-width: 1024px) {
+    .div{
+        width: 99%;
+        height: fit-content;
+        margin: 1vw;
+        margin-bottom: 25vw;
+    }
+}
 
 @media screen and (min-width:710px) and (max-width:1023px) {
     .nav-table{
@@ -201,7 +231,7 @@ footer{
         align-items: center;
     }
     .about-us-div{
-        background-image: url(../image/AnaSite/About_Us_Bg_Image.avif);
+        background-image: url(../image/About_Us/About_Us_Bg_Image.avif);
         background-size:cover;
         background-repeat: no-repeat;
         width: 100%;
@@ -272,7 +302,7 @@ footer{
         align-items: center;
     }
     .about-us-div{
-        background-image: url(../image/AnaSite/About_Us_Bg_Image.avif);
+        background: url(../image/About_Us/About_Us_Bg_Image.avif);
         background-size:cover;
         background-repeat: no-repeat;
         width: 100%;
