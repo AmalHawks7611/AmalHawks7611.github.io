@@ -308,6 +308,7 @@ footer{
     }
     .robot-image{
         width: 25vw;
+        height: fit-content;
         float: left;
         margin-right: 5vw;
     }
@@ -377,6 +378,7 @@ footer{
     }
     .robot-image{
         width: 25vw;
+        height: fit-content;
         float: left;
         margin-right: 5vw;
     }
@@ -445,6 +447,7 @@ footer{
     }
     .robot-image{
         width: 25vw;
+        height: fit-content;
         float: left;
         margin-right: 5vw;
     }
@@ -514,6 +517,7 @@ footer{
     }
     .robot-image{
         width: 25vw;
+        height: fit-content;
         float: left;
         margin-right: 5vw;
     }
