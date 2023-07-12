@@ -30,102 +30,30 @@ nav{
     position: relative;
     float: inline-start;
 }
-.hakkimizda:link,.hakkimizda:visited{
+.nav-a:link,.nav-a:visited{
     display: inline-block;
     padding: 14px 25px;
     text-decoration: none;
     border-radius: 10%;
     color: #fff;
 }
-.hakkimizda:hover,.hakkimizda:active{
+.nav-a:hover,.nav-a:active{
     display: inline-block;
     padding: 14px 25px;
     text-decoration: none;
     color: whitesmoke;
     text-decoration: underline whitesmoke;
 }
-.robotlar:link,.robotlar:visited{
+.no-padding:link,.no-padding:visited{
     display: inline-block;
-    padding: 14px 25px;
     text-decoration: none;
     border-radius: 10%;
     color: #fff;
 }
-.robotlar:hover,.robotlar:active{
+.no-padding:hover,.no-padding:active{
     display: inline-block;
-    padding: 14px 25px;
     text-decoration: none;
-    color: whitesmoke;
-    text-decoration: underline whitesmoke;
-}
-.sponsorlar:link,.sponsorlar:visited{
-    display: inline-block;
-    padding: 14px 25px;
-    text-decoration: none;
-    border-radius: 10%;
-    color: #fff;
-}
-.sponsorlar:hover,.sponsorlar:active{
-    display: inline-block;
-    padding: 14px 25px;
-    text-decoration: none;
-    color: whitesmoke;
-    text-decoration: underline whitesmoke;
-}
-.blog:link,.blog:visited{
-    display: inline-block;
-    padding: 14px 25px;
-    text-decoration: none;
-    border-radius: 10%;
-    color: #fff;
-}
-.blog:hover,.blog:active{
-    display: inline-block;
-    padding: 14px 25px;
-    text-decoration: none;
-    color: whitesmoke;
-    text-decoration: underline whitesmoke;
-}
-.iletisim:link,.iletisim:visited{
-    display: inline-block;
-    padding: 14px 25px;
-    text-decoration: none;
-    border-radius: 10%;
-    color: #fff;
-}
-.iletisim:hover,.iletisim:active{
-    display: inline-block;
-    padding: 14px 25px;
-    text-decoration: none;
-    color: whitesmoke;
-    text-decoration: underline whitesmoke;
-}
-.egitim:link,.egitim:visited{
-    display: inline-block;
-    padding: 14px 25px;
-    text-decoration: none;
-    border-radius: 10%;
-    color: #fff;
-}
-.egitim:hover,.egitim:active{
-    display: inline-block;
-    padding: 14px 25px;
-    text-decoration: none;
-    color: whitesmoke;
-    text-decoration: underline whitesmoke;
-}
-.photos:link,.photos:visited{
-    display: inline-block;
-    padding: 14px 25px;
-    text-decoration: none;
-    border-radius: 10%;
-    color: #fff;
-}
-.photos:hover,.photos:active{
-    display: inline-block;
-    padding: 14px 25px;
-    text-decoration: none;
-    color: whitesmoke;
+    color: aliceblue;
     text-decoration: underline whitesmoke;
 }
 .about-us-div{
@@ -162,7 +90,7 @@ nav{
     float: left;
 }
 .p{
-    font-size: large;
+    font-size: xx-large;
     color: aliceblue;
     margin-left: 1vw;
 }
@@ -269,7 +197,7 @@ footer{
         margin-left: 1vw;
     }
     footer{
-        width: 100vw;
+        width: 100%;
         background-color: #343A40;
         height:fit-content;
         display: flex;
