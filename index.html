@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="tr" style="scroll-behavior: smooth;">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Amal Hawks 7611, Türkiye'nin önde gelen FRC robotik takımı. Etkinlikler, projeler, robotlar ve yönetim kadromuz hakkında bilgi edinin.">
+  <meta name="keywords" content="Amal Hawks, FRC, robotik, Türkiye, robot yarışmaları, teknoloji, mühendislik, STEM, Climate Hawks, The Nest">
+  <meta name="author" content="Amal Hawks 7611">
+  <meta name="robots" content="index, follow">
+  <title data-translate="page_title">Amal Hawks 7611 - Robotik ve İnovasyon</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: #111827;
+      color: #e5e7eb;
+    }
+    .navbar {
+      backdrop-filter: blur(10px);
+      background: rgba(17, 24, 39, 0.8);
+    }
+    .section {
+      scroll-margin-top: 80px;
+      padding: 4rem 1.5rem;
+      border-bottom: 1px solid #4b5563;
+    }
+    .hawk-bg {
+      position: relative;
+      overflow: hidden;
+    }
+    .hawk-bg-img {
+      background: url('/images/gallery/2025/17.jpg') center/cover no-repeat;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      filter: blur(4px);
+      z-index: 0;
+    }
+    .hawk-bg::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3));
+      z-index: 1;
+    }
+    .hawk-animation {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      background: url('/images/hawk-logo.png') center/contain no-repeat;
+      animation: soar 10s infinite ease-in-out;
+      z-index: 2;
+    }
+    .firefly {
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      background: #f97316;
+      border-radius: 50%;
+      box-shadow: 0 0 10px #f97316;
+      animation: firefly 2s infinite ease-in-out;
+      z-index: 2;
+    }
+    @keyframes firefly {
+      0%, 100% { opacity: 0.2; transform: translate(0, 0); }
+      50% { opacity: 1; transform: translate(20px, -20px); }
+    }
+    @keyframes soar {
+      0% { transform: translate(0, 0); }
+      50% { transform: translate(100vw, 50vh); }
+      100% { transform: translate(0, 0); }
+    }
+    .landing-card {
+      background: rgba(31, 41, 55, 0.8);
+      border-radius: 12px;
+      padding: 2rem;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+      z-index: 10;
+    }
+    .slide-in {
+      opacity: 0;
+      transform: translateX(100px);
+      transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+    .slide-in.visible {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    .timeline {
+      position: relative;
+      max-width: 800px;
+      margin: 0 auto;
+      overflow-x: hidden;
+    }
+    .timeline::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 6px;
+      height: 100%;
+      background: linear-gradient(to bottom, #f97316, #f59e0b);
+      transform: translateX(-50%);
+      z-index: 1;
+    }
+    .timeline-year {
+      position: relative;
+      margin: 3rem 0;
+    }
+    .timeline-year::before {
+      content: '';
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      background: #f97316;
+      border: 3px solid #fff;
+      border-radius: 50%;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 2;
+    }
+    .year-label {
+      position: absolute;
+      top: -2.5rem;
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: #f97316;
+      background: #111827;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      z-index: 3;
+    }
+    .timeline-year.left .year-label {
+      right: 0;
+    }
+    .timeline-year.right .year-label {
+      left: 0;
+    }
+    .timeline-item {
+      position: relative;
+      margin: 1rem 0;
+      width: 45%;
+      background: #1f2937;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+      z-index: 2;
+    }
+    .timeline-item.left {
+      margin-left: 55%;
+    }
+    .timeline-item.right {
+      margin-left: 0;
+      margin-right: 55%;
+    }
+    @media (max-width: 640px) {
+      .timeline::before {
+        left: 20px;
+      }
+      .timeline-year::before {
+        left: 20px;
+      }
+      .timeline-year.left .year-label,
+      .timeline-year.right .year-label {
+        position: relative;
+        left: 0;
+        top: 0;
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+        display: block;
+        width: fit-content;
+      }
+      .timeline-item {
+        width: calc(100% - 60px);
+        margin-left: 40px;
+        margin-right: 20px;
+      }
+      .timeline-item.left,
+      .timeline-item.right {
+        margin-left: 40px;
+        margin-right: 20px;
+      }
+    }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+    .gallery-img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+    .gallery-img:hover {
+      transform: scale(1.05);
+    }
+    .robot-card {
+      transition: transform 0.5s ease;
+    }
+    .robot-card:hover {
+      transform: scale(1.05);
+    }
+    .project-card {
+      transition: transform 0.3s ease;
+    }
+    .project-card:hover {
+      transform: scale(1.03);
+    }
+    .newsletter-card {
+      border-left: 4px solid #f97316;
+      transition: transform 0.3s ease;
+    }
+    .newsletter-card:hover {
+      transform: translateX(10px);
+    }
+    .lightbox {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.9);
+      z-index: 1000;
+      justify-content: center;
+      align-items: center;
+    }
+    .lightbox-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      position: relative;
+    }
+    .lightbox-img {
+      max-width: 90%;
+      max-height: 80vh;
+      object-fit: contain;
+      border-radius: 8px;
+    }
+    .lightbox-nav {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      padding: 0.5rem 1rem;
+      background: #f97316;
+      color: white;
+      font-weight: bold;
+      border-radius: 4px;
+      cursor: pointer;
+      user-select: none;
+      transition: background 0.3s ease;
+    }
+    .lightbox-nav:hover {
+      background: #ea580c;
+    }
+    .lightbox-prev {
+      left: 20px;
+    }
+    .lightbox-next {
+      right: 20px;
+    }
+    .lightbox-close {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      font-size: 2rem;
+      color: #fff;
+      cursor: pointer;
+    }
+    .hamburger {
+      display: none;
+      cursor: pointer;
+    }
+    .hamburger div {
+      width: 25px;
+      height: 3px;
+      background: #fff;
+      margin: 5px 0;
+    }
+    .lang-toggle {
+      display: flex;
+      align-items: center;
+    }
+    .lang-toggle button {
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+    .lang-toggle button.active {
+      background: #f97316;
+      color: white;
+    }
+    .lang-toggle button:not(.active) {
+      background: #4b5563;
+      color: #e5e7eb;
+    }
+    .lang-toggle button:not(.active):hover {
+      background: #6b7280;
+    }
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 64px;
+        left: 0;
+        background: rgba(17, 24, 39, 0.9);
+        padding: 1rem;
+      }
+      .nav-links.active {
+        display: flex;
+      }
+      .hamburger {
+        display: block;
+      }
+      .lang-toggle {
+        margin-top: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar fixed top-0 w-full z-50 py-4 px-6 flex justify-between items-center">
+    <div class="text-2xl font-bold text-orange-500" data-translate="site_name">Amal Hawks 7611</div>
+    <div class="hamburger md:hidden" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div class="nav-links md:flex md:space-x-4">
+      <a href="#home" class="text-gray-300 hover:text-orange-500 transition block md:inline-block py-2" data-translate="nav_home">Ana Sayfa</a>
+      <a href="#about" class="text-gray-300 hover:text-orange-500 transition block md:inline-block py-2" data-translate="nav_about">Hakkımızda</a>
+      <a href="#events" class="text-gray-300 hover:text-orange-500 transition block md:inline-block py-2" data-translate="nav_events">Etkinlikler</a>
+      <a href="#management" class="text-gray-300 hover:text-orange-500 transition block md:inline-block py-2" data-translate="nav_management">Yönetim Kadrosu</a>
+      <a href="#gallery" class="text-gray-300 hover:text-orange-500 transition block md:inline-block py-2" data-translate="nav_gallery">Galeri</a>
+      <a href="#robots" class="text-gray-300 hover:text-orange-500 transition block md:inline-block py-2" data-translate="nav_robots">Robotlar</a>
+      <a href="#projects" class="text-gray-300 hover:text-orange-500 transition block md:inline-block py-2" data-translate="nav_projects">Projelerimiz</a>
+      <a href="#contact" class="text-gray-300 hover:text-orange-500 transition block md:inline-block py-2" data-translate="nav_contact">İletişim</a>
+      <a href="#newsletter" class="text-gray-300 hover:text-orange-500 transition block md:inline-block py-2" data-translate="nav_newsletter">Bülten</a>
+      <a href="#sponsors" class="text-gray-300 hover:text-orange-500 transition block md:inline-block py-2" data-translate="nav_sponsors">Sponsorlar</a>
+      <div class="lang-toggle md:ml-4">
+        <button class="lang-btn active" data-lang="tr">TR</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home" class="section hawk-bg min-h-screen flex items-center justify-center relative">
+    <div class="hawk-bg-img"></div>
+    <div class="hawk-animation"></div>
+    <div class="firefly" style="top: 20%; left: 10%; animation-delay: 0s;"></div>
+    <div class="firefly" style="top: 50%; left: 30%; animation-delay: 0.5s;"></div>
+    <div class="firefly" style="top: 70%; left: 60%; animation-delay: 1s;"></div>
+    <div class="firefly" style="top: 30%; left: 80%; animation-delay: 1.5s;"></div>
+    <div class="landing-card text-center p-8 max-w-lg mx-auto">
+      <h1 class="text-5xl font-bold text-orange-500 mb-4" data-translate="home_title">Amal Hawks 7611</h1>
+      <p class="text-xl text-gray-200 mb-6" data-translate="home_subtitle">Bir FRC Takımından Daha Fazlası!</p>
+      <a href="#projects" class="inline-block px-6 py-3 bg-orange-500 text-white rounded hover:bg-orange-600 transition" data-translate="home_cta">Projelerimizi Keşfet</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section bg-gray-900 flex items-center">
+    <div class="max-w-4xl mx-auto flex flex-col md:flex-row items-center">
+      <div class="md:w-2/3">
+        <h2 class="text-4xl font-bold text-orange-500 mb-8" data-translate="about_title">Hakkımızda</h2>
+        <p class="text-lg text-gray-300" data-translate="about_description">Amal Hawks 7611, 2017 yılında Türkiye'de kurulan bir FRC takımıdır. Mühendislik, teknoloji ve yenilikle geleceği inşa ediyoruz. Ödüllerimiz ve tutkumuzla her yıl sınırları zorluyoruz!</p>
+      </div>
+      <img src="images/7.png" alt="Amal Hawks Şahin Logosu" class="md:w-1/3 slide-in h-48 object-contain">
+    </div>
+  </section>
+
+  <!-- Events Section -->
+  <section id="events" class="section bg-gray-800">
+    <h2 class="text-4xl font-bold text-center text-orange-500 mb-12" data-translate="events_title">Etkinlikler</h2>
+    <div class="timeline">
+      <div id="event-list"></div>
+    </div>
+  </section>
+
+  <!-- Management Team Section -->
+  <section id="management" class="section bg-gray-700">
+    <h2 class="text-4xl font-bold text-center text-orange-500 mb-12" data-translate="management_title">Yönetim Kadrosu</h2>
+    <p class="text-lg text-center text-gray-300" data-translate="management_description">Yönetim kadromuz sezon içinde belli olacaktır.</p>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="section bg-gray-900">
+    <h2 class="text-4xl font-bold text-center text-orange-500 mb-12" data-translate="gallery_title">Galeri</h2>
+    <div id="gallery-list" class="max-w-5xl mx-auto"></div>
+    <div id="lightbox" class="lightbox">
+      <div class="lightbox-content">
+        <button class="lightbox-nav lightbox-prev" data-translate="gallery_prev">Önceki</button>
+        <img id="lightbox-img" class="lightbox-img" src="" alt="Lightbox Image">
+        <button class="lightbox-nav lightbox-next" data-translate="gallery_next">Sonraki</button>
+      </div>
+      <span class="lightbox-close">×</span>
+    </div>
+  </section>
+
+  <!-- Robots Section -->
+  <section id="robots" class="section bg-gray-800">
+    <h2 class="text-4xl font-bold text-center text-orange-500 mb-12" data-translate="robots_title">Robotlarımız</h2>
+    <div id="robot-list" class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8"></div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section bg-gray-700">
+    <h2 class="text-4xl font-bold text-center text-orange-500 mb-12" data-translate="projects_title">Projelerimiz</h2>
+    <!-- Climate Hawks -->
+    <a href="https://www.instagram.com/climatehawks7611/">
+      <div class="bg-green-900 py-12 px-6 mb-12 rounded-lg">
+        <h3 class="text-3xl font-bold text-green-400 text-center mb-6" data-translate="project_climate_title">Climate Hawks</h3>
+        <div class="max-w-3xl mx-auto flex flex-col md:flex-row items-center">
+          <img src="/images/projects/climate.jpeg" alt="Climate Hawks Projesi" class="md:w-1/3 h-48 object-cover rounded mb-4 md:mb-0 md:mr-4">
+          <p class="text-gray-300" data-translate="project_climate_description">Climate Hawks, çevresel sürdürülebilirlik için geliştiren bir projedir. Çevremizi temizleyip gelecek nesillere örnek oluyoruz ve değişime önce çevremizden başlıyoruz.</p>
+        </div>
+      </div>
+    </a>
+    <!-- The Nest -->
+    <a href="https://the-nest.com.tr/">
+      <div class="bg-gradient-to-r from-blue-200 to-blue-400 py-12 px-6 mb-12 rounded-lg">
+        <h3 class="text-3xl font-bold text-blue-900 text-center mb-6" data-translate="project_nest_title">The Nest</h3>
+        <div class="max-w-3xl mx-auto flex flex-col md:flex-row items-center">
+          <img src="/images/projects/the_nest.png" alt="The Nest Projesi" class="md:w-1/3 h-48 object-cover rounded mb-4 md:mb-0 md:mr-4">
+          <p class="text-gray-900" data-translate="project_nest_description">The Nest, gençlere STEM eğitimi sunan bir topluluk projesidir. Geleceğin mühendislerini yetiştiriyoruz!</p>
+        </div>
+      </div>
+    </a>
+    <!-- Other Projects -->
+    <div class="max-w-5xl mx-auto">
+      <h3 class="text-3xl font-bold text-orange-500 text-center mb-6" data-translate="projects_other_title">Diğer Projeler</h3>
+      <div id="project-list" class="grid grid-cols-1 md:grid-cols-3 gap-8"></div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section bg-gray-800">
+    <h2 class="text-4xl font-bold text-center text-orange-500 mb-12" data-translate="contact_title">İletişim</h2>
+    <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div>
+        <h3 class="text-2xl font-bold text-orange-500 mb-6" data-translate="contact_form_title">Bize Ulaşın</h3>
+        <div class="bg-gray-900 p-6 rounded-lg shadow-lg">
+          <input type="text" placeholder="Adınız" data-translate-placeholder="contact_name_placeholder" class="w-full p-3 mb-4 bg-gray-700 text-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-orange-500">
+          <input type="email" placeholder="E-posta" data-translate-placeholder="contact_email_placeholder" class="w-full p-3 mb-4 bg-gray-700 text-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-orange-500">
+          <textarea placeholder="Mesajınız" data-translate-placeholder="contact_message_placeholder" class="w-full p-3 mb-4 bg-gray-700 text-gray-300 rounded h-32 focus:outline-none focus:ring-2 focus:ring-orange-500"></textarea>
+          <button class="px-6 py-3 bg-orange-500 text-white rounded hover:bg-orange-600 transition w-full" data-translate="contact_submit">Gönder</button>
+        </div>
+      </div>
+      <div>
+        <h3 class="text-2xl font-bold text-orange-500 mb-6" data-translate="contact_location_title">Atölyemiz</h3>
+        <p class="text-gray-300 mb-4" data-translate="contact_location">Yayla, Çöreotu Sk. No:14/1, Adnan Menderes Anadolu Lisesi, Bahçelievler, İstanbul, Türkiye</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3010.5768241832956!2d28.858627915258!3d40.99817667930476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caa3f8f8f5e7d7%3A0x9f6b8e6b6e6e6e6e!2sAdnan%20Menderes%20Anadolu%20Lisesi!5e0!3m2!1str!2str!4v1698765432109!5m2!1str!2str" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter Section -->
+  <section id="newsletter" class="section bg-gradient-to-b from-gray-900 to-blue-900">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-5xl font-bold text-orange-500 mb-8" data-translate="newsletter_title">Amal Hawks Bülteni</h2>
+      <p class="text-xl text-gray-200 mb-12" data-translate="newsletter_description">Takımımızın en güncel haberleri, etkinlikleri ve robotik yenilikleri burada! Şahinlerin uçuşunu takip edin.</p>
+      <div id="news-list" class="grid grid-cols-1 md:grid-cols-2 gap-6"></div>
+    </div>
+  </section>
+
+  <!-- Sponsors Section -->
+  <section id="sponsors" class="section bg-gray-900">
+    <h2 class="text-4xl font-bold text-center text-orange-500 mb-12" data-translate="sponsors_title">2025 Sponsorlarımız</h2>
+    <p class="text-gray-300 text-center mb-8" data-translate="sponsors_description">Bizi destekleyen değerli sponsorlarımıza teşekkür ederiz!</p>
+    <div class="max-w-5xl mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8">
+        <img src="https://www.turkishcargo.com/documents/logolar/yeni_logo/turkish-cargo-logo-395x365.jpg" alt="Sponsor" class="w-full h-24 object-contain">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF9RkO_y2yI0HoCbRXTa-UuYFHSe3YpAr5ug&s" alt="Sponsor" class="w-full h-24 object-contain">
+        <img src="https://boeing.mediaroom.com/images/logo-thumbnail.png" alt="Sponsor" class="w-full h-24 object-contain">
+        <img src="https://media.licdn.com/dms/image/v2/D4D0BAQFTtQlbl8o5dQ/company-logo_200_200/company-logo_200_200/0/1683288783039?e=2147483647&v=beta&t=nUNZe9vvfxt9HRiA2CMr2RmUxzqEG_Qr-L9yJBmiUd0" alt="Sponsor 4" class="w-full h-24 object-contain">
+        <img src="https://www.webtures.com/wp-content/uploads/2023/09/t-ho.png" alt="Sponsor" class="w-full h-24 object-contain">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWcmUicNoafKfAgOHprHTgh0SAmX6yZKAcTA&s" alt="Sponsor" class="w-full h-24 object-contain">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXdYsS4pnqgedWCDhGhu1qN4BgtRyY0ROc3w&s" alt="Sponsor" class="w-full h-24 object-contain">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZcmGG82BT5kdfA67gfe_e38dUXXXEgHluMw&s" alt="Sponsor" class="w-full h-24 object-contain">
+        <img src="https://www.sistemal.com/wp-content/uploads/2022/03/SistemAl-Bg.jpg" alt="Sponsor" class="w-full h-24 object-contain">
+        <img src="https://www.serrezistans.com/imaj/ser-resim-logo.jpg" alt="Sponsor" class="w-full h-24 object-contain">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdDM8YwPFSgrG0LQyXjsC5cjDIHQqKJmI8HA&s" alt="Sponsor" class="w-full h-24 object-contain">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9Ajlt82Ojxh6pB7oLWDsxolePut7F2LQx7w&s" alt="Sponsor" class="w-full h-24 object-contain">
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-6 px-6 bg-gray-900 text-center text-gray-300">
+    <p data-translate="footer_copyright">© 2025 Amal Hawks 7611. Tüm hakları saklıdır.</p>
+  </footer>
+
+  <script>
+    // Translation Data
+    const translations = {
+      tr: {
+        page_title: "Amal Hawks 7611 - Robotik ve İnovasyon",
+        site_name: "Amal Hawks 7611",
+        nav_home: "Ana Sayfa",
+        nav_about: "Hakkımızda",
+        nav_events: "Etkinlikler",
+        nav_management: "Yönetim Kadrosu",
+        nav_gallery: "Galeri",
+        nav_robots: "Robotlar",
+        nav_projects: "Projelerimiz",
+        nav_contact: "İletişim",
+        nav_newsletter: "Bülten",
+        nav_sponsors: "Sponsorlar",
+        home_title: "Amal Hawks 7611",
+        home_subtitle: "Bir FRC Takımından Daha Fazlası!",
+        home_cta: "Projelerimizi Keşfet",
+        about_title: "Hakkımızda",
+        about_description: "Amal Hawks 7611, 2017 yılında Türkiye'de kurulan bir FRC takımıdır. Mühendislik, teknoloji ve yenilikle geleceği inşa ediyoruz. Ödüllerimiz ve tutkumuzla her yıl sınırları zorluyoruz!",
+        events_title: "Etkinlikler",
+        management_title: "Yönetim Kadrosu",
+        management_description: "Yönetim kadromuz sezon içinde belli olacaktır.",
+        gallery_title: "Galeri",
+        gallery_prev: "Önceki",
+        gallery_next: "Sonraki",
+        robots_title: "Robotlarımız",
+        projects_title: "Projelerimiz",
+        project_climate_title: "Climate Hawks",
+        project_climate_description: "Climate Hawks, çevresel sürdürülebilirlik için geliştiren bir projedir. Çevremizi temizleyip gelecek nesillere örnek oluyoruz ve değişime önce çevremizden başlıyoruz.",
+        project_nest_title: "The Nest",
+        project_nest_description: "The Nest, gençlere STEM eğitimi sunan bir topluluk projesidir. Geleceğin mühendislerini yetiştiriyoruz!",
+        projects_other_title: "Diğer Projeler",
+        contact_title: "İletişim",
+        contact_form_title: "Bize Ulaşın",
+        contact_name_placeholder: "Adınız",
+        contact_email_placeholder: "E-posta",
+        contact_message_placeholder: "Mesajınız",
+        contact_submit: "Gönder",
+        contact_location_title: "Atölyemiz",
+        contact_location: "Yayla, Çöreotu Sk. No:14/1, Adnan Menderes Anadolu Lisesi, Bahçelievler, İstanbul, Türkiye",
+        newsletter_title: "Amal Hawks Bülteni",
+        newsletter_description: "Takımımızın en güncel haberleri, etkinlikleri ve robotik yenilikleri burada! Şahinlerin uçuşunu takip edin.",
+        sponsors_title: "2025 Sponsorlarımız",
+        sponsors_description: "Bizi destekleyen değerli sponsorlarımıza teşekkür ederiz!",
+        footer_copyright: "© 2025 Amal Hawks 7611. Tüm hakları saklıdır.",
+        event_upcoming: "Yaklaşan Etkinlik",
+        event_past: "Geçmiş Etkinlik",
+        robot_status: "Durum",
+        robot_awards: "Ödüller/Dereceler",
+        robot_epa: "EPA"
+      },
+      en: {
+        page_title: "Amal Hawks 7611 - Robotics and Innovation",
+        site_name: "Amal Hawks 7611",
+        nav_home: "Home",
+        nav_about: "About Us",
+        nav_events: "Events",
+        nav_management: "Management Team",
+        nav_gallery: "Gallery",
+        nav_robots: "Robots",
+        nav_projects: "Our Projects",
+        nav_contact: "Contact",
+        nav_newsletter: "Newsletter",
+        nav_sponsors: "Sponsors",
+        home_title: "Amal Hawks 7611",
+        home_subtitle: "More Than Just an FRC Team!",
+        home_cta: "Explore Our Projects",
+        about_title: "About Us",
+        about_description: "Amal Hawks 7611 is an FRC team founded in Turkey in 2017. We build the future with engineering, technology, and innovation. With our awards and passion, we push boundaries every year!",
+        events_title: "Events",
+        management_title: "Management Team",
+        management_description: "Our management team will be determined during the season.",
+        gallery_title: "Gallery",
+        gallery_prev: "Previous",
+        gallery_next: "Next",
+        robots_title: "Our Robots",
+        projects_title: "Our Projects",
+        project_climate_title: "Climate Hawks",
+        project_climate_description: "Climate Hawks is a project developed for environmental sustainability. We clean our environment, set an example for future generations, and start change from our surroundings.",
+        project_nest_title: "The Nest",
+        project_nest_description: "The Nest is a community project offering STEM education to youth. We are nurturing the engineers of the future!",
+        projects_other_title: "Other Projects",
+        contact_title: "Contact",
+        contact_form_title: "Get in Touch",
+        contact_name_placeholder: "Your Name",
+        contact_email_placeholder: "Email",
+        contact_message_placeholder: "Your Message",
+        contact_submit: "Send",
+        contact_location_title: "Our Workshop",
+        contact_location: "Yayla, Çöreotu Sk. No:14/1, Adnan Menderes Anadolu Lisesi, Bahçelievler, Istanbul, Turkey",
+        newsletter_title: "Amal Hawks Newsletter",
+        newsletter_description: "Stay updated with our latest news, events, and robotics innovations! Follow the flight of the Hawks.",
+        sponsors_title: "2025 Sponsors",
+        sponsors_description: "We thank our valued sponsors for their support!",
+        footer_copyright: "© 2025 Amal Hawks 7611. All rights reserved.",
+        event_upcoming: "Upcoming Event",
+        event_past: "Past Event",
+        robot_status: "Status",
+        robot_awards: "Awards/Achievements",
+        robot_epa: "EPA"
+      }
+    };
+
+    // JSON Data
+    const eventsData = [
+      { year: 2017, title: { tr: "Yıldız Robocon '18", en: "Yıldız Robocon '18" }, description: { tr: "İlk robotumuz ile 3. olduk.", en: "We placed 3rd with our first robot." }, upcoming: false },
+      { year: 2017, title: { tr: "Marmara Üni. Robot Olimpiyatları", en: "Marmara University Robot Olympics" }, description: { tr: "Arazi kategorisinde 2. olduk.", en: "We placed 2nd in the terrain category." }, upcoming: false },
+      { year: 2018, title: { tr: "Ankara Off-Season", en: "Ankara Off-Season" }, description: { tr: "İlk FRC yarışmamızda çaylak dalında 5. olduk.", en: "We placed 5th in the rookie category at our first FRC competition." }, upcoming: false },
+      { year: 2019, title: { tr: "New York Long Island Regional", en: "New York Long Island Regional" }, description: { tr: "Amerika'daki ilk yarışmamızda 'Industrial Design Award' ve '#1 Rookie Award' ödüllerini kazandık.", en: "We won the 'Industrial Design Award' and '#1 Rookie Award' at our first competition in the USA." }, upcoming: true },
+      { year: 2019, title: { tr: "Mersin Off-Season", en: "Mersin Off-Season" }, description: { tr: "Ön eleme ilk 8 ve yarı final derecesi.", en: "Top 8 in qualifiers and semi-finalist." }, upcoming: false },
+      { year: 2019, title: { tr: "Ankara Off-Season", en: "Ankara Off-Season" }, description: { tr: "Çeyrek final derecesi aldık ve 'Woodie Flowers(En İyi Takım Mentörü)' ödülünü kazandık.", en: "We reached the quarter-finals and won the 'Woodie Flowers (Best Team Mentor)' award." }, upcoming: false },
+      { year: 2021, title: { tr: "Teknofest", en: "Teknofest" }, description: { tr: "Roket Yarışması yarı final, İnsanlık Yararına Teknoloji yarı final.", en: "Rocket Competition semi-final, Technology for Humanity semi-final." }, upcoming: false },
+      { year: 2021, title: { tr: "Kimseyi Geride Bırakma Hackathon", en: "Leave No One Behind Hackathon" }, description: { tr: "1. lik elde ettik.", en: "We won 1st place." }, upcoming: false },
+      { year: 2021, title: { tr: "Way Of Feature Hackathon", en: "Way Of Feature Hackathon" }, description: { tr: "3. lük elde ettik.", en: "We won 3rd place." }, upcoming: false },
+      { year: 2021, title: { tr: "Kimseyi Geride Bırakma Hackathon", en: "Leave No One Behind Hackathon" }, description: { tr: "1. lik elde ettik.", en: "We won 1st place." }, upcoming: false },
+      { year: 2022, title: { tr: "Orlando Regional", en: "Orlando Regional" }, description: { tr: "Derece elde edemedik.", en: "We did not place." }, upcoming: false },
+      { year: 2022, title: { tr: "MEB Robot Yarışması", en: "MEB Robot Competition" }, description: { tr: "4 robotla 3 kategoride yarıştık.", en: "We competed with 4 robots in 3 categories." }, upcoming: false },
+      { year: 2022, title: { tr: "Cern.ch/bl4s Yarışması", en: "Cern.ch/bl4s Competition" }, description: { tr: "Yüzlerce proje arasından ilk 24'e kaldık.", en: "We ranked in the top 24 among hundreds of projects." }, upcoming: false },
+      { year: 2022, title: { tr: "Teknofest Roket Yarışması", en: "Teknofest Rocket Competition" }, description: { tr: "", en: "" }, upcoming: false },
+      { year: 2022, title: { tr: "NASA Space Apps Hackathon", en: "NASA Space Apps Hackathon" }, description: { tr: "", en: "" }, upcoming: false },
+      { year: 2022, title: { tr: "Riders Yazılım Yarışması", en: "Riders Software Competition" }, description: { tr: "", en: "" }, upcoming: false },
+      { year: 2023, title: { tr: "Los Angeles Regional", en: "Los Angeles Regional" }, description: { tr: "Team Spirit(Takım Ruhu) ödülü kazandık.", en: "We won the Team Spirit Award." }, upcoming: false },
+      { year: 2023, title: { tr: "Teknofest", en: "Teknofest" }, description: { tr: "Roket ve Girişimcilik yarışmalarında yarıştık.", en: "We competed in Rocket and Entrepreneurship competitions." }, upcoming: false },
+      { year: 2023, title: { tr: "NASA Space Apps Hackathon", en: "NASA Space Apps Hackathon" }, description: { tr: "", en: "" }, upcoming: false },
+      { year: 2023, title: { tr: "Robert Koleji Solution First Çevre Çalıştayı", en: "Robert College Solution First Environmental Workshop" }, description: { tr: "", en: "" }, upcoming: false },
+      { year: 2024, title: { tr: "New York Regional", en: "New York Regional" }, description: { tr: "derece elde edemedik.", en: "We did not place." }, upcoming: false },
+      { year: 2024, title: { tr: "1. Teknoloji ve Sürdürülebilirlik Çalıştayı'nı Düzenledik", en: "We Organized the 1st Technology and Sustainability Workshop" }, description: { tr: "Üsküdar belediyesi ortaklığıyla.", en: "In partnership with Üsküdar Municipality." }, upcoming: false },
+      { year: 2024, title: { tr: "Florya Sahili Çöp Toplama Etkinliği", en: "Florya Coast Cleanup Event" }, description: { tr: "", en: "" }, upcoming: false },
+      { year: 2024, title: { tr: "Erzurum MEB Robot Yarışması", en: "Erzurum MEB Robot Competition" }, description: { tr: "4 farklı kategoride 6 robot, 1 serbest proje ile katıldık.", en: "We participated with 6 robots in 4 categories and 1 open project." }, upcoming: false },
+      { year: 2024, title: { tr: "Başakşehir Off-Season", en: "Başakşehir Off-Season" }, description: { tr: "Team Spirit(Takım Ruhu) ve Dean's List ödüllerini kazandık.", en: "We won the Team Spirit and Dean's List awards." }, upcoming: false },
+      { year: 2025, title: { tr: "Galleria Kick-Off", en: "Galleria Kick-Off" }, description: { tr: "4 Ocak 2025 tarihinde Galleria AVM'de 572 kişiyi ağırladık.", en: "On January 4, 2025, we hosted 572 people at Galleria Mall." }, upcoming: false },
+      { year: 2025, title: { tr: "Bosphorus Regional", en: "Bosphorus Regional" }, description: { tr: "Yarı Final - 3.lük elde ettik.", en: "We reached the semi-finals and placed 3rd." }, upcoming: false },
+      { year: 2025, title: { tr: "South Florida Regional", en: "South Florida Regional" }, description: { tr: "Katıldığımız bu yarışmada derece elde edemedik.", en: "We did not place in this competition." }, upcoming: false },
+      { year: 2026, title: { tr: "Kayseri MEB Robot Yarışması", en: "Kayseri MEB Robot Competition" }, description: { tr: "", en: "" }, upcoming: true }
+    ];
+
+    const galleryData = [
+      {
+        year: 2017,
+        images: [
+          { src: "/images/gallery/2017/1.jpg", alt: "1" },
+          { src: "/images/gallery/2017/2.jpg", alt: "2" }
+        ]
+      },
+      {
+        year: 2018,
+        images: [
+          { src: "/images/gallery/2018/1.jpg", alt: "1" },
+          { src: "/images/gallery/2018/2.jpg", alt: "2" },
+          { src: "/images/gallery/2018/3.jpg", alt: "3" }
+        ]
+      },
+      {
+        year: 2019,
+        images: [
+          { src: "/images/gallery/2019/1.jpg", alt: "1" },
+          { src: "/images/gallery/2019/2.jpg", alt: "2" },
+          { src: "/images/gallery/2019/3.jpg", alt: "3" },
+          { src: "/images/gallery/2019/4.jpg", alt: "4" },
+          { src: "/images/gallery/2019/5.png", alt: "5" },
+          { src: "/images/gallery/2019/6.png", alt: "6" },
+          { src: "/images/gallery/2019/7.png", alt: "7" }
+        ]
+      },
+      {
+        year: 2020,
+        images: [
+          { src: "/images/gallery/2020/1.jpg", alt: "1" }
+        ]
+      },
+      {
+        year: 2021,
+        images: [
+          { src: "/images/gallery/2021/1.jpg", alt: "1" },
+          { src: "/images/gallery/2021/2.jpg", alt: "2" },
+          { src: "/images/gallery/2021/3.jpg", alt: "3" }
+        ]
+      },
+      {
+        year: 2022,
+        images: Array.from({ length: 30 }, (_, i) => ({
+          src: `/images/gallery/2022/${i + 1}.avif`,
+          alt: `${i + 1}`
+        }))
+      },
+      {
+        year: 2023,
+        images: Array.from({ length: 30 }, (_, i) => ({
+          src: `/images/gallery/2023/${i + 1}.avif`,
+          alt: `${i + 1}`
+        }))
+      },
+      {
+        year: 2024,
+        images: Array.from({ length: 30 }, (_, i) => ({
+          src: `/images/gallery/2024/${i + 1}.jpg`,
+          alt: `${i + 1}`
+        }))
+      },
+      {
+        year: 2025,
+        images: Array.from({ length: 31 }, (_, i) => ({
+          src: `/images/gallery/2025/${i + 1}.jpg`,
+          alt: `${i + 1}`
+        }))
+      }
+    ];
+
+    const robotsData = [
+      { name: { tr: "PULAT 61", en: "PULAT 61" }, status: { tr: "Aktif", en: "Active" }, awards: { tr: "İTÜ Robocon 2., Marmara Üni. Robot Olimpiyatları 3.", en: "ITU Robocon 2nd, Marmara University Robot Olympics 3rd" }, epa: NaN, image: "/images/gallery/2017/1.jpg" },
+      { name: { tr: "2018 Robot", en: "2018 Robot" }, status: { tr: "Tasfiye Edildi", en: "Liquidated" }, awards: { tr: "Çaylak 5.", en: "Rookie 5th" }, epa: NaN, image: "/images/gallery/2018/2.jpg" },
+      { name: { tr: "2019 Robot", en: "2019 Robot" }, status: { tr: "Emekli", en: "Retired" }, awards: { tr: "Industrial Design Award-#1 Rookie Award-Yarı Final-Çeyrek Final", en: "Industrial Design Award-#1 Rookie Award-Semi Final-Quarter Final" }, epa: 13.3, image: "/images/robots/2019.jpg" },
+      { name: { tr: "2022 Robot", en: "2022 Robot" }, status: { tr: "Tasfiye Edildi", en: "Liquidated" }, awards: { tr: "Yok", en: "None" }, epa: 10.7, image: "/images/robots/2022.jpg" },
+      { name: { tr: "2023 Robot - EARTHQUAKE", en: "2023 Robot - EARTHQUAKE" }, status: { tr: "Emekli", en: "Retired" }, awards: { tr: "Team Spirit Award", en: "Team Spirit Award" }, epa: 11.9, image: "/images/robots/2023.jpg" },
+      { name: { tr: "2024 Robot", en: "2024 Robot" }, status: { tr: "Emekli", en: "Retired" }, awards: { tr: "Yok", en: "None" }, epa: 8.2, image: "/images/robots/2024.png" },
+      { name: { tr: "2025 Robot - ICEBERG", en: "2025 Robot - ICEBERG" }, status: { tr: "Aktif", en: "Active" }, awards: { tr: "Yarı Final", en: "Semi Final" }, epa: 17.3, image: "/images/robots/2025.jpg" }
+    ];
+
+    const projectsData = [
+      { title: { tr: "FRC Sözlük", en: "FRC Dictionary" }, description: { tr: "Eğer FRC’ye yeni başladıysan burası tam sana göre. Her gün yeni bir terimle sizinle olacağız RSL'den motorlara kadar her şey ve daha fazlası burada.", en: "If you're new to FRC, this is the place for you. We'll introduce a new term every day, from RSL to motors and more." }, image: "/images/projects/frc_sozluk.jpg" },
+      { title: { tr: "Hawk Speech", en: "Hawk Speech" }, description: { tr: "Bu proje ile yolculuğumuz boyunca karşılaştığımız zorlukları ve bu zorlukların üstesinden nasıl geldiğimizi eğlenceli bir yolla sizlere aktaracağız", en: "Through this project, we’ll share the challenges we faced on our journey and how we overcame them in a fun way." }, image: "/images/projects/hawkspeech.jpg" }
+    ];
+
+    const newsData = [
+      // Add translations if news items are added in the future
+    ];
+
+    // Language Toggle Functionality
+    let currentLang = localStorage.getItem('language') || 'tr';
+
+    function setLanguage(lang) {
+      currentLang = lang;
+      localStorage.setItem('language', lang);
+      document.querySelectorAll('[data-translate]').forEach(element => {
+        const key = element.getAttribute('data-translate');
+        if (translations[lang][key]) {
+          element.textContent = translations[lang][key];
+        }
+      });
+      document.querySelectorAll('[data-translate-placeholder]').forEach(element => {
+        const key = element.getAttribute('data-translate-placeholder');
+        if (translations[lang][key]) {
+          element.placeholder = translations[lang][key];
+        }
+      });
+      document.querySelector('html').lang = lang;
+      document.querySelector('meta[name="description"]').content = lang === 'tr' ?
+        "Amal Hawks 7611, Türkiye'nin önde gelen FRC robotik takımı. Etkinlikler, projeler, robotlar ve yönetim kadromuz hakkında bilgi edinin." :
+        "Amal Hawks 7611, a leading FRC robotics team in Turkey. Learn about our events, projects, robots, and management team.";
+      document.querySelector('meta[name="keywords"]').content = lang === 'tr' ?
+        "Amal Hawks, FRC, robotik, Türkiye, robot yarışmaları, teknoloji, mühendislik, STEM, Climate Hawks, The Nest" :
+        "Amal Hawks, FRC, robotics, Turkey, robot competitions, technology, engineering, STEM, Climate Hawks, The Nest";
+      document.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
+      });
+      renderEvents();
+      renderRobots();
+      renderProjects();
+      renderNews();
+    }
+
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        setLanguage(btn.getAttribute('data-lang'));
+      });
+    });
+
+    // Render Events
+    function renderEvents() {
+      const eventList = document.getElementById('event-list');
+      eventList.innerHTML = '';
+      const years = [...new Set(eventsData.map(event => event.year))];
+      years.forEach((year, index) => {
+        const yearSection = document.createElement('div');
+        yearSection.className = `timeline-year ${index % 2 === 0 ? 'left' : 'right'}`;
+        yearSection.innerHTML = `<span class="year-label">${year}</span>`;
+        const yearEvents = eventsData.filter(event => event.year === year);
+        yearEvents.forEach(event => {
+          const item = document.createElement('div');
+          item.className = `timeline-item ${index % 2 === 0 ? 'left' : 'right'}`;
+          item.innerHTML = `
+            <h3 class="text-xl font-bold text-orange-500">${event.title[currentLang]}</h3>
+            <p class="text-gray-300">${event.description[currentLang]}</p>
+            <p class="text-sm text-gray-500">${event.upcoming ? translations[currentLang].event_upcoming : translations[currentLang].event_past}</p>
+          `;
+          yearSection.appendChild(item);
+        });
+        eventList.appendChild(yearSection);
+      });
+    }
+
+    // Render Gallery
+    const galleryList = document.getElementById('gallery-list');
+    galleryData.forEach(yearData => {
+      const yearSection = document.createElement('div');
+      yearSection.className = 'mb-12';
+      yearSection.innerHTML = `<h3 class="text-2xl font-bold text-orange-500 mb-4">${yearData.year}</h3>`;
+      const gridContainer = document.createElement('div');
+      gridContainer.className = 'gallery-grid';
+      yearData.images.forEach((image, index) => {
+        const img = document.createElement('img');
+        img.src = image.src;
+        img.alt = image.alt;
+        img.className = 'gallery-img';
+        img.dataset.year = yearData.year;
+        img.dataset.index = index;
+        img.addEventListener('click', () => openLightbox(yearData.year, index));
+        gridContainer.appendChild(img);
+      });
+      yearSection.appendChild(gridContainer);
+      galleryList.appendChild(yearSection);
+    });
+
+    // Lightbox Functionality
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const lightboxPrev = document.querySelector('.lightbox-prev');
+    const lightboxNext = document.querySelector('.lightbox-next');
+    const lightboxClose = document.querySelector('.lightbox-close');
+    let currentYear, currentIndex;
+
+    function openLightbox(year, index) {
+      currentYear = year;
+      currentIndex = index;
+      const images = galleryData.find(data => data.year === parseInt(year)).images;
+      lightboxImg.src = images[index].src;
+      lightboxImg.alt = images[index].alt;
+      lightbox.style.display = 'flex';
+    }
+
+    lightboxPrev.addEventListener('click', () => {
+      const images = galleryData.find(data => data.year === parseInt(currentYear)).images;
+      currentIndex = (currentIndex - 1 + images.length) % images.length;
+      lightboxImg.src = images[currentIndex].src;
+      lightboxImg.alt = images[currentIndex].alt;
+    });
+
+    lightboxNext.addEventListener('click', () => {
+      const images = galleryData.find(data => data.year === parseInt(currentYear)).images;
+      currentIndex = (currentIndex + 1) % images.length;
+      lightboxImg.src = images[currentIndex].src;
+      lightboxImg.alt = images[currentIndex].alt;
+    });
+
+    lightboxClose.addEventListener('click', () => {
+      lightbox.style.display = 'none';
+    });
+
+    // Render Robots
+    function renderRobots() {
+      const robotList = document.getElementById('robot-list');
+      robotList.innerHTML = '';
+      robotsData.forEach(robot => {
+        const card = document.createElement('div');
+        card.className = 'robot-card bg-gray-800 p-6 rounded-lg';
+        card.innerHTML = `
+          <img src="${robot.image}" alt="${robot.name[currentLang]}" class="w-full h-48 object-cover rounded mb-4">
+          <h3 class="text-xl font-bold text-orange-500">${robot.name[currentLang]}</h3>
+          <p class="text-gray-300">${translations[currentLang].robot_status}: ${robot.status[currentLang]}</p>
+          <p class="text-gray-300">${translations[currentLang].robot_awards}: ${robot.awards[currentLang]}</p>
+          <p class="text-gray-300">${translations[currentLang].robot_epa}: ${robot.epa}</p>
+        `;
+        robotList.appendChild(card);
+      });
+    }
+
+    // Render Projects
+    function renderProjects() {
+      const projectList = document.getElementById('project-list');
+      projectList.innerHTML = '';
+      projectsData.forEach(project => {
+        const card = document.createElement('div');
+        card.className = 'project-card bg-gray-800 p-6 rounded-lg';
+        card.innerHTML = `
+          <img src="${project.image}" alt="${project.title[currentLang]}" class="w-full h-48 object-cover rounded mb-4">
+          <h3 class="text-xl font-bold text-orange-500">${project.title[currentLang]}</h3>
+          <p class="text-gray-300">${project.description[currentLang]}</p>
+        `;
+        projectList.appendChild(card);
+      });
+    }
+
+    // Render News
+    function renderNews() {
+      const newsList = document.getElementById('news-list');
+      newsList.innerHTML = '';
+      newsData.forEach(news => {
+        const item = document.createElement('div');
+        item.className = 'newsletter-card bg-gray-800 p-6 rounded-lg shadow-lg';
+        item.innerHTML = `
+          <h3 class="text-2xl font-bold text-orange-500 mb-2">${news.title[currentLang]}</h3>
+          <p class="text-gray-200 mb-2">${news.date[currentLang]}</p>
+          <p class="text-gray-200">${news.description[currentLang]}</p>
+        `;
+        newsList.appendChild(item);
+      });
+    }
+
+    // Scroll Animation for About Section
+    window.addEventListener('scroll', () => {
+      const hawkImg = document.querySelector('.slide-in');
+      const rect = hawkImg.getBoundingClientRect();
+      if (rect.top < window.innerHeight * 0.8) {
+        hawkImg.classList.add('visible');
+      }
+    });
+
+    // Toggle Mobile Menu
+    function toggleMenu() {
+      const navLinks = document.querySelector('.nav-links');
+      navLinks.classList.toggle('active');
+    }
+
+    // Initialize Language
+    setLanguage(currentLang);
+  </script>
+</body>
+</html>
